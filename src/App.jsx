@@ -2,6 +2,26 @@ import { useState } from 'react'
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard'
 
+
+ const users = [
+    {
+        userName: 'midudev',
+        name: 'Miguel Angel',
+        initialIsFollowing: true
+    },
+    {
+        userName: 'angela',
+        name: 'Miguel Angel',
+        initialIsFollowing: false
+    },
+    {
+        userName: 'josema',
+        name: 'Jose Manuel',
+        initialIsFollowing: false
+    }
+]
+
+
 export function App () 
 {
     // componente -> funcion que devuelve elemento const format = (userName) => `@${userName}`
@@ -12,17 +32,18 @@ export function App ()
     console.log('render with name', name)   
 
     return (
-        <section className='App'> {/*hace lo mismo que react fragment*/}
-            <TwitterFollowCard userName={name} initialIsFollowing={true}>
-                Jose Manuel
-            </TwitterFollowCard>
-            <TwitterFollowCard userName="elonmusk"> 
-                Jose Manuel
-            </TwitterFollowCard>
-
-            <button onClick={() => setName('pedro')} >
-                Cambio Nombre
-            </button>
+        <section className='App'>
+           { /*bloque renderizable*/
+                users.map(({userName, name, initialIsFollowing }) => (
+                        <TwitterFollowCard 
+                        key={userName}
+                        userName={userName} 
+                        initialIsFollowing={initialIsFollowing}
+                        >
+                            {name}
+                        </TwitterFollowCard>
+                ))
+            }
         </section>
     )
 }

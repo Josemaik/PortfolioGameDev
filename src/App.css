@@ -38,9 +38,42 @@ article header div {
     border-radius: 999px;
     padding: 6px 16px;
     font-weight: bold;
+    border: 1px solid black;
+    transition: .3s ease bavkground-color;
 }
 
 .tw-follow-button:hover {
-    background-color: #09f;
-    transition: .3s ease bavkground-color;
+    opacity: 0.8;
+}
+
+.tw-FollowCard-text {
+    display: block;
+}
+
+.tw-follow-button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color:#fff;
+    width: 140px;
+}
+
+.tw-follow-button.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+}
+
+
+.tw-follow-button.is-following:hover .tw-FollowCard-text {
+    display: none;
+}
+
+.tw-follow-button.is-following:hover .tw-FollowCard-stopFollow{
+    display: block;
+}
+
+
+.tw-FollowCard-stopFollow {
+    display: none;
 }

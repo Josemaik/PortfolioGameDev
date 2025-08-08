@@ -1,7 +1,19 @@
-import './App.css'
+import { useState } from 'react' 
 
-export function TwitterFollowCard ({children, userName = 'unknown', name, isFollowing}) 
-{   
+export function TwitterFollowCard ({children, userName = 'unknown', initialIsFollowing}) 
+{  
+    //constants
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing) 
+
+    const text = isFollowing ? 'Following' : 'Follow'
+    const buttonClassName = isFollowing ? 'tw-follow-button is-following' : 'tw-follow-button'
+    
+    //functions
+    const handleClick = () => {
+        setIsFollowing(!isFollowing)
+    }
+
+    //block to render
     return (
         <article className='tw-follow-card'>
             <header className='tw-follow-card-header'>
@@ -16,8 +28,13 @@ export function TwitterFollowCard ({children, userName = 'unknown', name, isFoll
                 </div>
             </header>
             <aside>
-                <button className='tw-follow-button'>
-                    Follow
+                <button className={buttonClassName} onClick={handleClick}>
+                    <span className='tw-FollowCard-text'>
+                        {text}
+                    </span>
+                    <span className='tw-FollowCard-stopFollow'>
+                        Dejar de Seguir
+                    </span>
                 </button>
             </aside>
        </article>

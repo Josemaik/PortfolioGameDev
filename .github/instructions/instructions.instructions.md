@@ -11,6 +11,7 @@ Provide project context and coding guidelines that AI should follow when generat
 2. **Technologies to use in project**
     - React
     - Vite
+    - Tailwind Css if you think is a good option.
     - Three.js to add some models and 3d spaces, including animations.
 
 3. **Coding Guidelines**:

@@ -1,0 +1,33 @@
+.social-links {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 100;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.social-icon:hover {
+  color: #00fc47;
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .social-links {
+    left: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.2rem;
+  }
+}

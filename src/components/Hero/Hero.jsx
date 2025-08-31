@@ -12,7 +12,9 @@ const Hero = () => {
   const [currentKeyword, setCurrentKeyword] = useState(keywords[0]);
   const [prevKeyword, setPrevKeyword] = useState(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true)
 
+  //Handle video transition and keywords
   useEffect(() => {
     const interval = setInterval(() => {
       const currentIndex = keywords.indexOf(currentKeyword);
@@ -33,6 +35,19 @@ const Hero = () => {
 
     return () => clearInterval(interval);
   }, [currentKeyword]);
+
+   // Handle scroll indicator visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroSection = document.querySelector('.hero')
+      if (heroSection) {
+        const heroBottom = heroSection.getBoundingClientRect().bottom
+        setShowScrollIndicator(heroBottom > window.innerHeight)
+      }
+    }
+  window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <section className="hero">
@@ -68,6 +83,15 @@ const Hero = () => {
           <span className="keyword">{currentKeyword}</span> Programmer
         </h2>
       </div>
+
+      {showScrollIndicator && (
+        <div className="scroll-indicator">
+          <div className="mouse">
+            <div className="wheel"></div>
+          </div>
+          <div className="arrow"></div>
+        </div>
+      )}
     </section>
   );
 };

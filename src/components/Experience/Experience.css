@@ -1,0 +1,258 @@
+.experience {
+  padding: 6rem 2rem;
+  background: #000000;
+  position: relative;
+}
+
+.experience h2{
+    color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: #1a1a1a;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline-row {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  align-items: center; /* Center items vertically */
+}
+
+.timeline-content {
+  padding: 2rem;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #00fc47;
+  transform: translateX(-50%);
+}
+
+.timeline-node {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.timeline-image {
+  max-width: 450px; /* Adjust this value to your preferred size */
+  height: 200px; /* Fixed height for consistency */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the image container */
+}
+
+.timeline-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.timeline-image:hover img {
+  transform: scale(1.05);
+}
+
+.timeline-node.left {
+  left: 0;
+  padding-right: 3rem;
+}
+
+.timeline-node.right {
+  left: 50%;
+  padding-left: 3rem;
+}
+
+.node-content {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.exp-info h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.exp-info h4 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.period {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.details-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: transparent;
+  border: 2px solid #00fc47;
+  color: #1a1a1a;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: center; /* Centers the button */
+  width: fit-content; /* Makes button width match content */
+}
+
+.details-btn:hover {
+  background: #00fc47;
+  color: white;
+}
+
+/*Marker*/
+.node-marker {
+  width: 20px;
+  height: 20px;
+  background: #00fc47;
+  transform: rotate(45deg);
+  position: relative;
+  border: 2px solid white;
+  box-shadow: 0 0 0 2px #00fc47;
+  transition: all 0.3s ease;
+}
+
+.node-marker::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: white;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+.timeline-row:hover .node-marker::before {
+  background: #00fc47;
+  transform: scale(0);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #1a1a1a;
+}
+
+.modal-header {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.modal-header img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.modal-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timeline-row {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .timeline-line {
+    left: 30px;
+  }
+
+  .timeline-node {
+    position: absolute;
+    left: 30px;
+    transform: translateX(-50%);
+  }
+
+  .timeline-image.right,
+  .timeline-image.left {
+    grid-row: 1;
+  }
+
+  .timeline-content.right,
+  .timeline-content.left {
+    grid-row: 2;
+    padding-left: 60px;
+  }
+}

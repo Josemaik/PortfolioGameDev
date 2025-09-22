@@ -1,0 +1,164 @@
+
+.skills-section {
+  padding: 6rem 2rem;
+  background: #000;
+  min-height: 100vh;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 2.5rem;
+  align-items: start;
+}
+
+.skills-container > .skill-category:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill-category h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Web Development: fila de 4 columnas en desktop */
+.skill-category[data-category="Web Development"] .skills-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 900px) {
+  .skill-category[data-category="Web Development"] .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-category[data-category="Web Development"] .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-item {
+  background: #181818;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #222;
+  box-shadow: none;
+  text-align: center;
+  transition: none;
+}
+
+.skill-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.skill-icon {
+  font-size: 2.25rem;
+  color: #64ff64;
+  display: flex;
+  gap: 0.5rem;
+  transition: none;
+}
+
+.skill-name {
+  color: #64ff64;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Skill bar styles */
+
+/* Para la descripción debajo del nombre */
+.skill-description {
+  color: #ffffff;
+  font-size: 0.98rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Alternating category layouts */
+
+
+/* Eliminar márgenes alternos innecesarios */
+
+@media (max-width: 1200px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  .skill-category {
+    width: 100%;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .skills-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .skill-category h3 {
+    font-size: 1.75rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+
+  .skill-bar-container {
+    height: 8px;
+  }
+}

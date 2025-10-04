@@ -22,10 +22,10 @@ const SocialLinks = () => {
     return () => observer.disconnect()
   }, [])
   const socials = [
-    { icon: <FaGithub />, url: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: <FaItchIo />, url: 'https://twitter.com/yourusername', label: 'Twitter' },
-    { icon: <MdOutlineMail />, url: 'https://youtube.com/@yourusername', label: 'YouTube' }
+    { icon: <FaGithub />, url: 'https://github.com/Josemaik', label: 'GitHub' },
+    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/josemanuelsorianob/', label: 'LinkedIn' },
+    { icon: <FaItchIo />, url: 'https://josemasito-6.itch.io/', label: 'Itch.io' },
+    { icon: <MdOutlineMail />, url: 'mailto:jmdevmode@gmail.com', label: 'Email' }
   ]
 
   return (

@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import Experience from './components/Experience/Experience'
 import TechnicalSkills from './components/TechnicalSkills'
 import ProjectsCarousel from './components/ProjectsCarousel/ProjectsCarousel';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Experience />
       <TechnicalSkills />
       <ProjectsCarousel />
+      <Contact />
       <Footer />
     </div>
   )

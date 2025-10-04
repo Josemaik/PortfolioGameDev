@@ -16,7 +16,7 @@ const Header = () => {
         <a href="#home">Home</a>
         <a href="#demo-reel">Demo Reel</a>
         <a href="#biography">Biography</a>
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://github.com/Josemaik" target="_blank">GitHub</a>
       </nav>
       <a href="#portfolio" className="portfolio-btn">Portfolio</a>
     </header>

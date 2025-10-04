@@ -34,13 +34,14 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <h2>My Name is Jose Manuel, Game Programmer</h2>
-            <p>A <b>game programmer</b> from Spain and I'm love with games since I was child. Last year I finished my degree in Multimedia Engeneering in which I take my first steps in video game development and where my curiosity grew about the technical aspects of this field.
-               Now I'm doing a Master's degree in video game programming to extend my knowledge with the help of industry programmers.</p>
-            <p>Besides, In my free time I like to attend talks to learn about the latest developments in different engines, but more focused on Unreal Engine and build different personal prototypes where I can apply new techniques.</p>
-            <p>I am a person who enjoys working as a team, maintaining a healthy environment and where communication is the most important point. In addition, I like to go to the gym and play sports in general to maintain a good physical and mental state.</p>
+            <p>I'm a <strong>Software Engineer</strong> passionate about video game development, specializing in <strong>C++ and Unreal Engine</strong>. </p>
+            <p>Last year I finished my degree in <strong>Multimedia Engeneering</strong> in which I take my first steps in video game development and where my curiosity grew about the technical aspects of this field.
+               Now I'm doing a <strong>Master's degree in video game programming</strong> to extend my knowledge with the help of industry programmers.</p>
+              <p>In recent projects, I've focused on crafting custom <strong>AI systems</strong> — from behavior trees, blackboards, and navigation systems to AI perception frameworks — to create dynamic and engaging gameplay experiences. I also build editor tools and systems that allow designers to create engaging encounters and interactions with npcs.
+              I’ve developed <strong>ECS-based game engines</strong> from scratch, emphasizing performance, scalability, and <strong>data-driven architectures</strong>. This experience deepened my understanding of how to design flexible, maintainable systems that push technical limits without sacrificing creativity.</p>
           </div>
           <div className="about-image">
-            <img src="/assets/images/profile.jpg" alt="Jose Manuel" />
+            <img src="/assets/images/aboutme_picture.jpg" alt="Jose Manuel" />
           </div>
         </div>
       </section>

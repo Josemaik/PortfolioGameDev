@@ -248,6 +248,7 @@
   .timeline-image.right,
   .timeline-image.left {
     grid-row: 1;
+    display: none; /* hide logos/images on mobile */
   }
 
   .timeline-content.right,

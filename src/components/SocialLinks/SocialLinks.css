@@ -15,12 +15,34 @@
   font-size: 2.5rem;
   transition: all 0.3s ease;
   opacity: 0.7;
+  position: relative;
 }
 
 .social-icon:hover {
   color: #00fc47;
   opacity: 1;
   transform: translateX(5px);
+}
+
+/* Right-pointing arrow on hover (appears to the right of the icon) */
+.social-icon::after {
+  content: '';
+  position: absolute;
+  right: calc(100% + 6px);
+  top: 45%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #00fc47;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(3px);
 }
 
 .social-links.dark .social-icon {
@@ -33,10 +55,12 @@
 
 @media (max-width: 768px) {
   .social-links {
-    left: 1rem;
+    left: 0.6rem;
   }
   
   .social-icon {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
+
+  .social-icon::after { border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 6px solid #00fc47; }
 }

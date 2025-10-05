@@ -19,12 +19,26 @@ const experiences = [
     ]
   },
   {
-    id: 1,
+    id: 2,
     role: "Engine and AI Programmer",
     company: "Kaiwa Games",
     coverImage: "/assets/images/logos/KAIWA_Logo_Blanco.png",
     period: "2023 - 2024",
     summary: "Developed gameplay mechanics and AI systems using Unreal Engine 4. holaaaaaaaaaaaaaaaaaaaaaaa",
+    details: [
+      "Implemented core gameplay features using C++ and Blueprints",
+      "Created AI behavior trees for enemy NPCs",
+      "Optimized game performance and fixed critical bugs",
+      "Collaborated with artists to implement asset integration pipeline"
+    ]
+  },
+    {
+    id: 3,
+    role: "Tools Programmer",
+    company: "Universitat Alacant",
+    coverImage: "/assets/images/logos/UA_logo.png",
+    period: "2024 june - 2024 august",
+    summary: "UE5 tool",
     details: [
       "Implemented core gameplay features using C++ and Blueprints",
       "Created AI behavior trees for enemy NPCs",

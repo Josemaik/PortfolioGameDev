@@ -108,13 +108,11 @@
     flex-direction: column;
     gap: 1.5rem;
     padding-right: 0;
+    max-width: 500px;
   }
 
   .about-image {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
+    display: none; /* hide image on mobile */
   }
 
   .about-image img {
@@ -130,6 +128,6 @@
   }
 
   .about-text p {
-    text-align: center;
+    text-align: justify;
   }
 }

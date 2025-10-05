@@ -152,10 +152,15 @@
 
   .skills-grid {
     grid-template-columns: 1fr;
+    justify-items: stretch;
   }
 
   .skill-icon {
     font-size: 2rem;
+  }
+
+  .skill-item {
+    width: 100%;
   }
 
   .skill-bar-container {

@@ -33,7 +33,7 @@ const Modal = ({ experience, onClose }) => {
         <div className="modal-body">
           <ul>
             {experience.details.map((detail, index) => (
-              <li key={index}>{detail}</li>
+              <li key={`detail-${index}`}>{detail}</li>
             ))}
           </ul>
         </div>

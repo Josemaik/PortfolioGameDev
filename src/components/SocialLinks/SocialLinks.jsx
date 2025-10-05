@@ -32,7 +32,7 @@ const SocialLinks = () => {
     <div className={`social-links ${isDark ? 'dark' : ''}`}>
       {socials.map((social, index) => (
         <a 
-          key={index}
+          key={`${social.label}-${index}`}
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"

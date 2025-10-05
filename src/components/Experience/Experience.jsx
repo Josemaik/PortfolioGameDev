@@ -43,7 +43,7 @@ const Experience = () => {
       
       <div className="timeline">
         {experiences.map((exp, index) => (
-          <div key={exp.id} className="timeline-row">
+          <div key={`exp-${exp.id}`} className="timeline-row">
             {/* Content changes sides based on index */}
             {index % 2 === 0 ? (
               <>

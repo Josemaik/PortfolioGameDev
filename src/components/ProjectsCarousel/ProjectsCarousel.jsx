@@ -63,11 +63,11 @@ const projects = [
 
 export default function ProjectsGrid() {
   return (
-    <section className="projects-section">
+    <section id="portfolio" className="projects-section">
       <h2 className="projects-title">My Work</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <a href={project.url} className="project-card" key={index}>
+          <a href={project.url} className="project-card" key={`project-${index}`}>
             <div className="project-image-container">
               <img src={project.image} alt={project.title} className="project-image" />
             </div>

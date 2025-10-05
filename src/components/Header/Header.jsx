@@ -1,8 +1,9 @@
 import './Header.css'
+import { FaFolder } from "react-icons/fa"
 
 const brandLogo = "/assets/brand/brand-logo.gif"
 
-const Header = () => {
+const Header = ({ onHomeClick, onNavigate }) => {
   return (
     <header className="header">
       <div className="brand">
@@ -13,12 +14,27 @@ const Header = () => {
         />
       </div>
       <nav className="navbar">
-        <a href="#home">Home</a>
-        <a href="#demo-reel">Demo Reel</a>
-        <a href="#biography">Biography</a>
-        <a href="https://github.com/Josemaik" target="_blank">GitHub</a>
+        <a href="#" onClick={(e) => {
+          e.preventDefault();
+          onHomeClick?.();
+        }}>Home</a>
+  <a href="https://github.com/Josemaik" target="_blank">GitHub</a>
+  <a href="#contact" onClick={(e) => { e.preventDefault(); onNavigate?.('#contact'); }}>Contact</a>
+  <a href="/documents/CV_JoseManuel.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
-      <a href="#portfolio" className="portfolio-btn">Portfolio</a>
+      <button
+        aria-label="Go to portfolio"
+        onClick={() => onNavigate?.('.projects-title')}
+        className="portfolio-btn"
+      >
+        <span className="button-text">
+          <FaFolder className="folder-icon" />
+          <span className="label-text">Portfolio</span>
+        </span>
+        <span className="button-text-hover">
+          <span className="label-text">Go!</span>
+        </span>
+      </button>
     </header>
   )
 }

@@ -36,18 +36,29 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [currentKeyword]);
 
-   // Handle scroll indicator visibility
+  // Handle scroll indicator visibility: show when at top (y=0) OR when hero is taller than viewport
   useEffect(() => {
     const handleScroll = () => {
-      const heroSection = document.querySelector('.hero')
+      const heroSection = document.querySelector('.hero');
+      const isAtTop = window.scrollY === 0;
       if (heroSection) {
-        const heroBottom = heroSection.getBoundingClientRect().bottom
-        setShowScrollIndicator(heroBottom > window.innerHeight)
+        const heroBottom = heroSection.getBoundingClientRect().bottom;
+        setShowScrollIndicator(isAtTop || heroBottom > window.innerHeight);
+      } else {
+        setShowScrollIndicator(isAtTop);
       }
-    }
-  window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    };
+
+    // run once to set initial state
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
+  }, []);
 
   return (
     <section className="hero">

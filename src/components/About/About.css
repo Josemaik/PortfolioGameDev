@@ -43,6 +43,31 @@
   text-align: justify;
 }
 
+.about-cta {
+  margin-top: 1.25rem;
+}
+
+.about-contact-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1.5px solid #000;
+  background: transparent;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.22s ease;
+}
+
+.about-contact-btn:hover {
+  background: #00fc47;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+.about-cta { text-align: center; }
+.about-contact-icon { margin-right: 8px; vertical-align: middle; }
+
 /* image sits inside the .about container and aligns with the right edge of .about-content */
 .about-image {
   position: absolute;

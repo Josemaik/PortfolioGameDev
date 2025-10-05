@@ -130,8 +130,8 @@ const TechnicalSkills = () => {
             >
               <h3>{category.title}</h3>
               <div className="skills-grid">
-                {category.skills.map((skill) => (
-                  <div key={skill.name} className="skill-item">
+          {category.skills.map((skill) => (
+            <div key={`skill-${skill.name}`} className="skill-item">
                     <div className="skill-header">
                       <span className="skill-icon">{skill.icon}</span>
                       <span className="skill-name">{skill.name}</span>

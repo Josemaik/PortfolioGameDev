@@ -3,15 +3,17 @@ import { FaFolder, FaBars, FaTimes } from "react-icons/fa"
 import { useState } from 'react'
 
 const brandLogo = "/assets/brand/brand-logo.gif"
+const brandLogoBlue = "/assets/brand/brand_logo_blue.gif"
 
 const Header = ({ onHomeClick, onNavigate }) => {
   const [open, setOpen] = useState(false)
+  const isProject = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects');
 
   return (
-    <header className="header">
+    <header className={`header ${isProject ? 'header--project' : ''}`}>
       <div className="brand">
         <img 
-          src={brandLogo} 
+          src={isProject ? brandLogoBlue : brandLogo} 
           alt="JOSEMIKE" 
           className="brand-logo"
         />

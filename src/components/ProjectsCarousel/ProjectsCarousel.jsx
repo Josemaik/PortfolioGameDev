@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Lady Umnbrella',
     studio: 'Zulo Interactive',
-  image: '/assets/images/projects/LadyUmbrella_cartel.png',
+    image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
     description: (
       <>
         <strong>3D action-adventure</strong> where you play as Italian agent Francesca with a <strong>multi-functional umbrella.</strong>
@@ -17,12 +17,12 @@ const projects = [
       </>
     ), 
     teamSize: 40,
-    url: '#'
+    url: '/projects/lady-umbrella'
   },
   {
     title: 'Two Wonders',
     studio: 'Kaiwa Games',
-  image: '/assets/images/projects/Two_Wonders_Cartel.png',
+  image: '/assets/images/projects/TwoWonders/Two_Wonders_Cartel.png',
     description: (
       <>
         Two Wonders is an <strong>adventure</strong> video game based on <strong>elemental magic</strong> where you play a young magician in search of his master.
@@ -39,7 +39,7 @@ const projects = [
   {
     title: 'KAIWA',
     studio: 'KAIWA Studios',
-  image: '/assets/images/projects/LadyUmbrella_cartel.png',
+  image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
     description: ( 
       <>
         <strong>3D action-adventure</strong> where you play as Italian agent Francesca with a <strong>multi-functional umbrella.</strong>
@@ -51,7 +51,7 @@ const projects = [
   {
     title: 'KAIWA',
     studio: 'KAIWA Studios',
-  image: '/assets/images/projects/LadyUmbrella_cartel.png',
+  image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
     description: ( <>
         <strong>3D action-adventure</strong> where you play as Italian agent Francesca with a <strong>multi-functional umbrella.</strong>
       </>

@@ -9,6 +9,7 @@ import ProjectsCarousel from './components/ProjectsCarousel/ProjectsCarousel';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import PageTransition from './components/PageTransition/PageTransition';
+import LadyUmbrella from './projects/LadyUmbrella/LadyUmbrella';
 
 function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -75,14 +76,21 @@ function App() {
         }}
       />
       <Header onHomeClick={handleNavigateHome} onNavigate={handleNavigateWithTransition} />
-      <Hero />
-      <SocialLinks />
-      <About />
-      <Experience />
-      <TechnicalSkills />
-      <ProjectsCarousel />
-      <Contact />
-      <Footer />
+      {/* Simple path-based rendering for project pages */}
+      {window.location.pathname === '/projects/lady-umbrella' ? (
+        <LadyUmbrella />
+      ) : (
+        <>
+          <Hero />
+          <SocialLinks />
+          <About />
+          <Experience />
+          <TechnicalSkills />
+          <ProjectsCarousel />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </div>
   )
 }

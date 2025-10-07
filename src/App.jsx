@@ -10,14 +10,22 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import PageTransition from './components/PageTransition/PageTransition';
 import LadyUmbrella from './projects/LadyUmbrella/LadyUmbrella';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
+
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [transitionTarget, setTransitionTarget] = useState(null); // null | 'home' | selector
   const topRef = useRef(null);
 
   const handleNavigateHome = () => {
-    // Solo activar la transición si no estamos ya en la parte superior
+    // If we're on a project page, navigate back to the main landing page
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/projects')) {
+      // Use a full navigation to ensure the Router renders the landing route
+      window.location.href = '/';
+      return;
+    }
+
+    // Otherwise, only activate the branded transition if we've scrolled far down
     if (window.scrollY > 700) {
       setTransitionTarget('home');
       setIsTransitioning(true);
@@ -30,7 +38,7 @@ function App() {
     setIsTransitioning(true);
   };
 
-  // Helper to scroll to a selector accounting for fixed header height
+   // Helper to scroll to a selector accounting for fixed header height
   const scrollToSelectorWithOffset = (selector, instant = true) => {
     if (!selector) return;
     const el = document.querySelector(selector);
@@ -59,40 +67,68 @@ function App() {
     setTransitionTarget('home');
     setIsTransitioning(true);
   }, []);
-
+  
   return (
-    <div className="app" ref={topRef}>
-      <PageTransition 
-        isActive={isTransitioning} 
-        onTransitionEnd={handleTransitionEnd}
-        onCovered={() => {
-          // Cuando la pantalla está cubierta por el overlay, colocamos la vista
-          // en el objetivo sin animación visible para el usuario (ajustando por header)
-          if (transitionTarget === 'home') {
-            window.scrollTo({ top: 0, behavior: 'auto' });
-          } else if (typeof transitionTarget === 'string') {
-            scrollToSelectorWithOffset(transitionTarget, true);
-          }
-        }}
-      />
-      <Header onHomeClick={handleNavigateHome} onNavigate={handleNavigateWithTransition} />
-      {/* Simple path-based rendering for project pages */}
-      {window.location.pathname === '/projects/lady-umbrella' ? (
-        <LadyUmbrella />
-      ) : (
-        <>
-          <Hero />
-          <SocialLinks />
-          <About />
-          <Experience />
-          <TechnicalSkills />
-          <ProjectsCarousel />
-          <Contact />
-          <Footer />
-        </>
-      )}
-    </div>
-  )
+    <Router>
+      <div className="app" ref={topRef}>
+        <PageTransition 
+          isActive={isTransitioning} 
+          onTransitionEnd={handleTransitionEnd}
+          onCovered={() => {
+            if (transitionTarget === 'home') {
+              window.scrollTo({ top: 0, behavior: 'auto' });
+            } else if (typeof transitionTarget === 'string') {
+              scrollToSelectorWithOffset(transitionTarget, true);
+            }
+          }}
+        />
+
+        <Header 
+          onHomeClick={handleNavigateHome} 
+          onNavigate={handleNavigateWithTransition} 
+        />
+
+        <Routes>
+          {/* SPA Main Page */}
+          <Route 
+            path="/" 
+            element={
+              <>
+                <Hero />
+                <SocialLinks />
+                <About />
+                <Experience />
+                <TechnicalSkills />
+                <ProjectsCarousel />
+                <Contact />
+                <Footer />
+              </>
+            } 
+          />
+
+          {/* Lady Umbrella page */}
+          <Route path="/projects/lady-umbrella" element={<LadyUmbrella />} />
+
+          {/* default rute */}
+          <Route 
+            path="*"
+            element={
+              <>
+                <Hero />
+                <SocialLinks />
+                <About />
+                <Experience />
+                <TechnicalSkills />
+                <ProjectsCarousel />
+                <Contact />
+                <Footer />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;

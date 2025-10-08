@@ -25,14 +25,29 @@
 .tw-social-link:hover { background: #b78bad; color: #fff; transition: all 0.2s ease;  transform: scale(1.2); }
 
 .tw-main { width: 100%; margin: 1rem auto; padding: 0 0rem; display:flex; flex-direction: column; gap: 2rem; background: linear-gradient(180deg, #b78bad55 0%, #7d587555 100%); }
-.tw-summary { background-image: url('/assets/images/projects/TwoWonders/Background_two_wonders.png'); background-size: cover; background-position: 0px -570px; padding: 0rem 0rem 3rem 13rem; border-radius: 0px; }
-.tw-summary-text { flex:1; padding:2rem; max-width:50rem; }
-.tw-features { list-style:none; padding:0; margin:0; display:grid; gap:0.6rem; }
+.tw-summary { background-image: url('/assets/images/projects/TwoWonders/Background_two_wonders.png'); background-size: cover; background-position: 0px -200px; padding: 0rem 0rem 3rem 13rem; border-radius: 0px; }
+.tw-summary-text { 
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding:2rem;
+    max-width:100rem;
+    margin-top: 2rem;
+    background-color: rgb(55, 36, 50);
+    opacity: 0.85;
+    border-radius: 15px;
+}
+.overview-section{
+    max-width: 50rem;
+}
+.tw-summary-text p { padding:1rem 0rem; font-weight: bold}
+.tw-summary-text h1 { font-size:2.4rem; margin-top:1rem; color: #eaf6ff; }
+.tw-features { list-style:none; padding:1rem; margin:0; display:grid; gap:0.6rem; }
 .tw-features li { display:flex; align-items:center; gap:0.75rem; }
-.tw-features li p { margin:0; color:#aac1d9; }
+.tw-features li p { margin:0; color:#aac1d9; font-weight: bold }
 .feature-icon { width:28px; height:28px; flex-shrink:0; }
 
-.tw-role-box { margin-top:1rem; background: rgba(255,255,255,0.04); border-left:4px solid #2596be; padding:0.75rem 1rem; border-radius:6px; max-width:48rem; }
+.tw-role-box { margin-top:1rem; background: rgba(255,255,255,0.04); border-left:4px solid #aac1d9; padding:0.75rem 1rem; border-radius:6px; max-width:48rem; }
 .tw-role-box strong { display:block; color:#fff; margin-bottom:0.25rem; }
 .tw-role-box p { margin:0; color:#eaf6ff; }
 

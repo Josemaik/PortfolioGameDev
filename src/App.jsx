@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer';
 import PageTransition from './components/PageTransition/PageTransition';
 import LadyUmbrella from './projects/LadyUmbrella/LadyUmbrella';
 import TwoWonders from './projects/TwoWonders/TwoWonders';
+import CodZombiesPrototype from './projects/CodZombiesPrototype/CodZombiesPrototype';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
 
@@ -111,6 +112,8 @@ function App() {
           <Route path="/projects/lady-umbrella" element={<LadyUmbrella />} />
           {/* Two Wonders page */}
           <Route path="/projects/two-wonders" element={<TwoWonders />} />
+          {/* Cod Zombies Prototype page */}
+          <Route path="/projects/cod-zombies-prototype" element={<CodZombiesPrototype />} />
 
           {/* default rute */}
           <Route 

@@ -1,3 +1,4 @@
+import { s } from 'framer-motion/client';
 import './ProjectsCarousel.css';
 import { RiTeamFill } from "react-icons/ri";
 
@@ -38,25 +39,67 @@ const projects = [
   },
   {
     title: 'KAIWA',
-    studio: 'KAIWA Studios',
-  image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
+    studio: 'Kaiwa Games',
+  image: '/assets/images/projects/Mr.Og/Cartel_mrog_main.png',
     description: ( 
       <>
-        <strong>3D action-adventure</strong> where you play as Italian agent Francesca with a <strong>multi-functional umbrella.</strong>
+        Mr. Og the Sampler is an <strong>arcade game inspired by the classic Guzzler</strong> , released in 1986.
       </>
     ),
-    role: 'Solo Developer',
-    url: '#'
+    role: (
+      <>
+       I worked as a <strong>Designer and Programmer</strong> on this project, developed in <strong>7 weeks</strong> for the <strong>Amstrad CPC using Z80 assembly.</strong>
+      </>
+    ),
+    teamSize: 3,
+    url: 'https://kaiwa-ams0.itch.io/mr-og-the-sampler'
   },
   {
-    title: 'KAIWA',
-    studio: 'KAIWA Studios',
-  image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
-    description: ( <>
-        <strong>3D action-adventure</strong> where you play as Italian agent Francesca with a <strong>multi-functional umbrella.</strong>
+    title: 'Cod Zombies Prototype',
+    studio: 'Fan Game',
+  image: '/assets/images/projects/CodZombiesPrototype/CodPrototype.png',
+    description: ( 
+        <>
+        <strong>FPS Prototype</strong> made with Unreal Engine.
+        </>
+    ),
+    role: (
+      <>
+        I worked as a <strong>Solo Developer</strong> on this project, developing all the gameplay mechanics and systems in 2 weeks.
       </>
     ),
-    role: 'Solo Developer',
+    url: '/projects/cod-zombies-prototype'
+  },
+   {
+    title: 'Sci-Fi Shooter prototype',
+    studio: 'Fan Game',
+  image: '/assets/images/projects/ScifiShooter/UnexpectedMission.png',
+    description: ( 
+        <>
+        <strong>Sci-Fi Shooter prototype</strong> made in Unreal Engine 5 based in <strong>NOVA 3</strong> 
+        </>
+    ),
+    role: (
+      <>
+        I worked as a <strong>Solo Developer</strong> on this project, developing all the gameplay mechanics and systems in 1 month.
+      </>
+    ),
+    url: '#'
+  },
+   {
+    title: 'Teapathia',
+    studio: 'Final Degree Project',
+  image: '/assets/images/projects/Teapathia/teapathia.png',
+    description: ( 
+        <>
+        <strong>3D serious video game</strong> aimed at parents of children with autism spectrum disorders.
+        </>
+    ),
+    role: (
+      <>
+        I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering.
+      </>
+    ),
     url: '#'
   }
 ];
@@ -67,7 +110,7 @@ export default function ProjectsGrid() {
       <h2 className="projects-title">My Work</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <a href={project.url} className="project-card" key={`project-${index}`}>
+          <a target="_blank" href={project.url} className="project-card" key={`project-${index}` }>
             <div className="project-image-container">
               <img src={project.image} alt={project.title} className="project-image" />
             </div>

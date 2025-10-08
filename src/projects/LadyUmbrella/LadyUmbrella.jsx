@@ -84,16 +84,20 @@ export default function LadyUmbrella() {
           </div>
         </section>
 
-        <section className="lu-contributions">
+        <section className="iframe-section">
             <div className="iframe-container">
-                <iframe
-                src="https://www.youtube.com/embed/X_DgUlOjEhE"
-                title="Lady Umbrella Trailer"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                />
+              <iframe
+              src="https://www.youtube.com/embed/X_DgUlOjEhE"
+              title="Lady Umbrella Trailer"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              />
             </div>
+        </section>
+        
+
+        <section className="lu-contributions">
             <div className="lu-divider" aria-hidden="true" />
             <h2>My Contributions</h2>
             <article className="lu-contribution">
@@ -112,7 +116,43 @@ export default function LadyUmbrella() {
             </article>
 
             <article className="lu-contribution">
-                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Gameplay Tools</h3>
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Mafia and Agency Behaviour Trees</h3>
+                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>View Code here!</span>
+                </a>
+                <div className="lu-contrib-media">
+                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                </div>
+            </article>
+
+            <article className="lu-contribution">
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Flee, Flank and Find Cover Behaviour with Unreal EQS</h3>
+                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>View Code here!</span>
+                </a>
+                <div className="lu-contrib-media">
+                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                </div>
+            </article>
+
+             <article className="lu-contribution">
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Enemy Interaction with Umbrella Gadgets </h3>
+                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>View Code here!</span>
+                </a>
+                <div className="lu-contrib-media">
+                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                </div>
+            </article>
+
+              <article className="lu-contribution">
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Voice Lines System </h3>
                 <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />

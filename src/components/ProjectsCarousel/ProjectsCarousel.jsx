@@ -34,7 +34,7 @@ const projects = [
       </>
     ),
     teamSize: 6,
-    url: '#'
+    url: '/projects/two-wonders'
   },
   {
     title: 'KAIWA',

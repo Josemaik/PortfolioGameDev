@@ -38,7 +38,6 @@
 .lu-social-link:hover { background: #5781b6; color: #f4f4f4; transition: all 0.2s ease;  transform: scale(1.2); }
 
 .lu-main { width: 100%; margin: 2rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #5781b6;}
-.lu-summary { display: flex; gap: 1.5rem; align-items: flex-start; position: relative; }
 .lu-summary { background-image: url('/assets/images/projects/LadyUmbrella/MainKeyArt_01.png'); background-size: cover; background-position: center; padding: 1rem 12rem 10rem 10rem; border-radius: 0px; }
 .lu-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 50rem;}
 /* .lu-summary-image { width: 320px; flex-shrink: 0; } */
@@ -61,17 +60,31 @@
 .lu-role-box strong { display: block; color: #fff; margin-bottom: 0.25rem; }
 .lu-role-box p { margin: 0; color: #e9f7ef; }
 
+.iframe-section{
+  margin: 2rem 13rem;
+}
 .iframe-container {
     position: relative;
-    padding: 20rem; overflow: hidden;
-    max-width: 1200px;
-    max-height: 200px;
+    padding: 2rem 2rem;
+    overflow: hidden;
+    width: 1280px;
+    max-width: 1280px;
+    height: 720px;
+    max-height: 720x;
     margin: 0 auto;
     background-color: #315493;
     border-radius: 15px;
 }
 
-.iframe-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; padding: 1rem;}
+.iframe-container iframe { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 8px; 
+  padding: 1rem;
+}
 
 .lu-contributions { display: grid; gap: 1.25rem; }
 .lu-contributions h2 { margin-top: 2rem; padding-left: 13rem; font-size: 3rem;}

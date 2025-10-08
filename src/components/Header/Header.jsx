@@ -4,16 +4,19 @@ import { useState } from 'react'
 
 const brandLogo = "/assets/brand/brand-logo.gif"
 const brandLogoBlue = "/assets/brand/brand_logo_blue.gif"
+const brandLogoPurple = "/assets/brand/brand_logo_purple.gif"
 
 const Header = ({ onHomeClick, onNavigate }) => {
   const [open, setOpen] = useState(false)
   const isProject = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects');
-
+  const isTwoWonders = typeof window !== 'undefined' && window.location.pathname === '/projects/two-wonders';
+  const brandlogochoose = isProject ? (isTwoWonders ? brandLogoPurple : brandLogoBlue) : brandLogo;
+  
   return (
     <header className={`header ${isProject ? 'header--project' : ''}`}>
       <div className="brand">
         <img 
-          src={isProject ? brandLogoBlue : brandLogo} 
+          src={brandlogochoose} 
           alt="JOSEMIKE" 
           className="brand-logo"
         />

@@ -1,17 +1,17 @@
 .lu-wrapper { background: #000000; color: #fff; min-height: 100vh; }
 
 /*Navbar override stylesheet*/
-.lu-wrapper .header { background-color: white;}
-.lu-wrapper .navbar a {
+.header.header--lday-umbrella { background-color: white;}
+.header.header--lday-umbrella .navbar a {
   color: #5781b6;
 }
-.lu-wrapper .navbar a::after{border-bottom: 6px solid #5781b6;}
-.lu-wrapper .portfolio-btn {
+.header.header--lday-umbrella .navbar a::after{border-bottom: 6px solid #5781b6;}
+.header.header--lday-umbrella .portfolio-btn {
   border: 1.5px solid #fff; /* restored white border */
   background-color: #5781b6;    
   color: white;
 }
-.lu-wrapper .portfolio-btn::before {
+.header.header--lday-umbrella .portfolio-btn::before {
   background: #000000;
 }
 /*Social links override*/

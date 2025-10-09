@@ -3,7 +3,7 @@ import './CodZombiesPrototype.css';
 import Footer from '../../components/Footer/Footer';
 import SocialLinks from '../../components/SocialLinks/SocialLinks';
 import { FaSteam, FaYoutube, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa';
-import Header from '../../components/Header/Header';
+// Header provided globally by App
 
 const socials = [
   { href: 'https://store.steampowered.com/', icon: FaSteam, label: 'Steam' },
@@ -16,25 +16,6 @@ const socials = [
 export default function CodZombiesPrototype() {
   return (
     <div className="cz-wrapper">
-      <Header 
-        onHomeClick={() => { if (typeof window !== 'undefined') window.location.href = '/'; }}
-        onNavigate={(selector) => {
-          if (typeof window === 'undefined') return;
-          const clean = selector ? selector.replace(/^#|\./, '') : '';
-          if (window.location.pathname === '/') {
-            if (!clean) return;
-            const el = document.querySelector(selector);
-            if (el) {
-              const header = document.querySelector('.header');
-              const headerHeight = header ? header.offsetHeight : 0;
-              const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 8;
-              window.scrollTo({ top, behavior: 'smooth' });
-            }
-          } else {
-            window.location.href = '/' + (clean ? `#${clean}` : '');
-          }
-        }}
-      />
       <SocialLinks />
       <header className="cz-hero">
         <video className="cz-hero-video" autoPlay muted loop playsInline src="/assets/videos/ai-gameplay.mp4" />

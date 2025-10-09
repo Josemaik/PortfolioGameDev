@@ -1,15 +1,15 @@
-.tw-wrapper { background: #000; color: #aac1d9; min-height: 100vh; }
+  .tw-wrapper { background: #000; color: #aac1d9; min-height: 100vh; }
 
-/* Navbar overrides scoped to this project */
-.tw-wrapper .header { background-color: #b78bad; }
-.tw-wrapper .navbar a { color: #ffffff; }
-.tw-wrapper .navbar a:hover { color: #7d5875; }
-.tw-wrapper .navbar a::after { border-bottom: 6px solid #7d5875; }
-.tw-wrapper .portfolio-btn { border: 1.5px solid #fff; background-color: #7d5875; color: #fff; }
-.tw-wrapper .portfolio-btn::before {
+/* Navbar overrides for Two Wonders page (header lives at app root) */
+.header.header--two-wonders { background-color: #b78bad; }
+.header.header--two-wonders .navbar a { color: #ffffff; }
+.header.header--two-wonders .navbar a:hover { color: #7d5875; }
+.header.header--two-wonders .navbar a::after { border-bottom: 6px solid #7d5875; }
+.header.header--two-wonders .portfolio-btn { border: 1.5px solid #fff; background-color: #7d5875; color: #fff; }
+.header.header--two-wonders .portfolio-btn::before {
   background: #000000;
 }
-/*Social links override*/
+/* Social links override (keeps wrapper-scoped in case other pages use .tw-wrapper) */
 .tw-wrapper .social-icon:hover {
   color: #b78bad;
 }
@@ -24,8 +24,8 @@
 .tw-social-link { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 8px; background: rgba(255,255,255,0.04); color: #aac1d9; }
 .tw-social-link:hover { background: #b78bad; color: #fff; transition: all 0.2s ease;  transform: scale(1.2); }
 
-.tw-main { width: 100%; margin: 1rem auto; padding: 0 0rem; display:flex; flex-direction: column; gap: 2rem; background: linear-gradient(180deg, #b78bad55 0%, #7d587555 100%); }
-.tw-summary { background-image: url('/assets/images/projects/TwoWonders/Background_two_wonders.png'); background-size: cover; background-position: 0px -200px; padding: 0rem 0rem 3rem 13rem; border-radius: 0px; }
+.tw-main { width: 100%; margin: 0rem auto; padding: 0 0rem; display:flex; flex-direction: column; gap: 2rem; background: linear-gradient(180deg, #b78bad55 0%, #7d587555 100%); }
+ .tw-summary { background-image: url('/assets/images/projects/TwoWonders/Background_two_wonders.png'); background-size: cover; background-position: 0px -200px; padding: 0rem 0rem 3rem 13rem; border-radius: 0px; }
 .tw-summary-text { 
     display: flex;
     flex-direction: row;
@@ -40,7 +40,8 @@
 .overview-section{
     max-width: 50rem;
 }
-.tw-summary-text p { padding:1rem 0rem; font-weight: bold}
+.overview-section img { width: 180px; height: 100px;}
+.tw-summary-text p { padding:1rem 0rem;}
 .tw-summary-text h1 { font-size:2.4rem; margin-top:1rem; color: #eaf6ff; }
 .tw-features { list-style:none; padding:1rem; margin:0; display:grid; gap:0.6rem; }
 .tw-features li { display:flex; align-items:center; gap:0.75rem; }
@@ -77,18 +78,47 @@
 }
 
 .tw-contributions { display:grid; gap:1.25rem; padding: 0 13rem; }
-.tw-contributions h2 { font-size:2.4rem; color:#2596be; }
-.tw-contribution { background: rgba(255,255,255,0.03); padding:1rem; border-radius:8px; }
+.tw-contributions p{ margin: 1rem;}
+.tw-contributions a{ color: #ffffff;}
+.tw-contributions h2 { font-size:2.4rem; color:#ffffff; }
+.tw-contribution { display: flex; flex-direction: column; background: rgba(255,255,255,0.03); width: 100rem;  padding:1rem; border-radius:8px; }
+.tw-contribution video { width: 700px; max-width: 100%; border-radius: 6px; }
 .contrib-icon { width:48px; height:48px; margin-right:0.6rem; }
-.tw-github-btn { display:inline-flex; align-items:center; gap:0.5rem; background:#24292e; color:#fff; padding:0.5rem 0.75rem; border-radius:6px; text-decoration:none; font-weight:600; }
-.tw-contrib-media img { width:100%; max-width:760px; border-radius:6px; }
+.tw-github-btn { 
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  background:#b78bad;
+  color:#fff;
+  padding:0.5rem 0.75rem;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  margin: 1rem;
+  max-width: fit-content;
+  transition: transform 0.3s ease; 
+}
+.tw-github-btn:hover{  transform: scale(1.1);}
+.tw-contrib-media { display: flex; flex-wrap: 2fr; gap: 1rem; align-items: center;}
+.tw-contrib-media img { width:700px; max-width:760px; max-height: 760px;  border-radius:6px;}
+
+.tw-contrib-feature { margin: 1rem;}
+.tw-contrib-feature img { width: 100%; max-width: 760px; border-radius: 6px; }
+.tw-contrib-feature-title {display: flex; flex-direction: row; align-items: center;}
+.tw-contrib-feature-title img { width: 48px; height: 48px; margin-right: 0.6rem; }
+.tw-contrib-feature-title h3 { margin: 1rem;}
 
 /* repeating divider using carga_elementos.gif */
 .tw-divider { width: calc(100% - 6rem); max-width:1100px; height: 120px; margin: 1.5rem auto; background-image: url('/assets/images/projects/TwoWonders/carga_elementos.gif'); background-repeat: repeat-x; background-position: center center; background-size: contain; pointer-events:none; opacity:0.95; }
 
 .tw-details { background-image: url('/assets/images/projects/TwoWonders/Two_Wonders_Cartel.png'); background-position: 0px -2200px;  background-size: cover; padding:5rem 2rem 5rem 0rem; border-radius:8px; color:#fff; }
 .tw-details h2 { font-size:2.4rem; margin:0.25rem 13rem; }
-.tw-details li { list-style:none; margin:0.25rem 13rem; }
+.tw-details li { list-style:none; margin:0.1rem 13rem; }
+
+/* Tighten nested list spacing inside project details */
+.tw-details ul { margin: 0; padding-left: 0; }
+.tw-details ol { padding-left: 1.1rem; }
+.tw-details ol li { margin: 0.08rem 0; line-height: 1.25; }
 
 
 .tw-wrapper .footer-copy { color: #ffffff; }

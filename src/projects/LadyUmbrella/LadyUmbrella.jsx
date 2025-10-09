@@ -3,7 +3,7 @@ import './LadyUmbrella.css';
 import Footer from '../../components/Footer/Footer';
 import SocialLinks from '../../components/SocialLinks/SocialLinks';
 import { FaSteam, FaYoutube, FaLinkedin, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
-import Header from '../../components/Header/Header';
+// Header is provided globally by App; no per-page Header here to allow App's transition handlers to work
 
 const socials = [
   { href: 'https://store.steampowered.com/', icon: FaSteam, label: 'Steam' },
@@ -16,26 +16,6 @@ const socials = [
 export default function LadyUmbrella() {
   return (
     <div className="lu-wrapper">
-        <Header 
-          onHomeClick={() => { if (typeof window !== 'undefined') window.location.href = '/'; }}
-          onNavigate={(selector) => {
-            if (typeof window === 'undefined') return;
-            // If already on root, scroll to selector; otherwise navigate to root with hash
-            const clean = selector ? selector.replace(/^#|\./, '') : '';
-            if (window.location.pathname === '/') {
-              if (!clean) return;
-              const el = document.querySelector(selector);
-              if (el) {
-                const header = document.querySelector('.header');
-                const headerHeight = header ? header.offsetHeight : 0;
-                const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight - 8;
-                window.scrollTo({ top, behavior: 'smooth' });
-              }
-            } else {
-              window.location.href = '/' + (clean ? `#${clean}` : '');
-            }
-          }}
-        />
         <SocialLinks />
       <header className="lu-hero">
         <video className="lu-hero-video" autoPlay muted loop playsInline src="/assets/videos/gameplay-demo.mp4" />

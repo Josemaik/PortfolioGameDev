@@ -9,11 +9,11 @@ const brandLogoPurple = "/assets/brand/brand_logo_purple.gif"
 const Header = ({ onHomeClick, onNavigate }) => {
   const [open, setOpen] = useState(false)
   const isProject = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects');
-  const isTwoWonders = typeof window !== 'undefined' && window.location.pathname === '/projects/two-wonders';
+  const isTwoWonders = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects/two-wonders');
   const brandlogochoose = isProject ? (isTwoWonders ? brandLogoPurple : brandLogoBlue) : brandLogo;
-  
+  const HeaderClassName = isProject ? (isTwoWonders ? 'header--two-wonders' : 'header--lday-umbrella') : '';
   return (
-    <header className={`header ${isProject ? 'header--project' : ''}`}>
+    <header className={`header ${HeaderClassName}`}>
       <div className="brand">
         <img 
           src={brandlogochoose} 
@@ -33,7 +33,16 @@ const Header = ({ onHomeClick, onNavigate }) => {
       <div className="actions">
         <button
           aria-label="Go to portfolio"
-          onClick={() => onNavigate?.('.projects-title')}
+          onClick={() => {
+            // If we're on a project page, record the desired scroll target and navigate to home
+            if (isProject) {
+              try { localStorage.setItem('pendingScrollTarget', '.projects-title'); } catch(e){}
+              window.location.href = '/';
+              return;
+            }
+            // Otherwise, trigger the in-app transition/scroll
+            onNavigate?.('.projects-title');
+          }}
           className="portfolio-btn"
         >
           <span className="button-text">

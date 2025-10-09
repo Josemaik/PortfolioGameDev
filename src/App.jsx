@@ -65,6 +65,16 @@ function App() {
 
   // Ensure page starts at top on reload
   useEffect(() => {
+    // If another page requested a pending scroll target (e.g., header button on project page), honor it
+    const pending = typeof window !== 'undefined' ? localStorage.getItem('pendingScrollTarget') : null;
+    if (pending) {
+      // Clear pending immediately so it doesn't run again
+      try { localStorage.removeItem('pendingScrollTarget'); } catch (e) {}
+      setTransitionTarget(pending);
+      setIsTransitioning(true);
+      return;
+    }
+
     // Start the branded page transition on first load so F5 shows the fade/logo
     setTransitionTarget('home');
     setIsTransitioning(true);

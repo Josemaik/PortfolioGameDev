@@ -39,7 +39,7 @@
 
 .lu-main { width: 100%; margin: 2rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #5781b6;}
 .lu-summary { background-image: url('/assets/images/projects/LadyUmbrella/MainKeyArt_01.png'); background-size: cover; background-position: center; padding: 1rem 12rem 10rem 10rem; border-radius: 0px; }
-.lu-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 50rem;}
+.lu-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 70rem;}
 /* .lu-summary-image { width: 320px; flex-shrink: 0; } */
 .lu-summary-text p {padding: 1rem 0rem;}
 .lu-summary-image img { width: 100%; border-radius: 8px; object-fit: cover; }
@@ -86,13 +86,39 @@
   padding: 1rem;
 }
 
-.lu-contributions { display: grid; gap: 1.25rem; }
-.lu-contributions h2 { margin-top: 2rem; padding-left: 13rem; font-size: 3rem;}
-.lu-contribution { background: #5781b6; padding: 1rem 13rem; border-radius: 8px; }
+.lu-contributions { display: grid; gap: 1.25rem; padding: 0 3rem;}
+.lu-contributions h2 { margin-top: 2rem; padding-left: 7rem; font-size: 3rem;}
+.lu-contribution { background: #5781b6; padding: 1rem 7rem; border-radius: 8px; }
+.lu-contribution h3 {font-size: 1.5rem}
 .lu-contribution p{margin: 1rem 0rem;}
+.lu-contribution ul { padding-left: 1.5rem; }
+.lu-contribution div img {max-width: 1200px; margin: 3rem 0rem;}
+.lu-contribution video{max-width: 1200px; border-radius: 6px; margin: 0 auto;}
 .contrib-icon { width: 48px; height: 48px; vertical-align: middle; margin-right: 0.6rem; }
 .lu-github-btn { margin: 1rem 0rem;}
-.lu-contrib-media img { width: 100%; max-width: 560px; border-radius: 6px; }
+
+.lu-contrib-media { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);        
+  gap: 1rem;
+  max-width: 1500px;  
+  width: 100%;         
+}
+
+.lu-contrib-media img {
+  width: 100%;
+  height: 500px;
+  max-height: 1000px;                   
+  border-radius: 6px;
+}
+.image-zoom {
+  height: 1000px;
+  transition: transform 0.3s ease; /* suaviza el zoom */
+}
+.image-zoom:hover {
+   transform: scale(1.1); /* aumenta el tamaño al 105% */
+}
+
 .lu-contrib-divider { width: 100%; max-width: 560px; max-height: 70px; opacity: 0.9; margin: 0.6rem 0; mask-repeat: space;}
 .lu-divider {
   max-width: 1700px;

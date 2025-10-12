@@ -119,7 +119,7 @@ export default function TwoWonders() {
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> Zelda Model </h3>
             <p>Our game is based on the model of <b>The legend of Zelda</b>. For this reason, we start by implementing its basics mechanics such as collecting objects, sword attack, shield, open doors among others.</p>
             <p>My job here was to implement the basic Zelda enemies such as the Keese (random movement), Octorok (random movement and shooting),AquaMentus (fires 3 projectiles) or RiverZora (change position and shoot towards the player)</p>
-            <p>This model was implemented with <a href="https://www.raylib.com/">Raylib library</a>.</p>
+            <p>This model was implemented with <a href="https://www.raylib.com/" target="_blank">Raylib library</a>.</p>
             <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/Modelo_Zelda.mp4"/>
           </article>
           <article className="tw-contribution">

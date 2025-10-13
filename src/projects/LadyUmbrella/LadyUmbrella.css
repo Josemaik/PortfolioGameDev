@@ -141,6 +141,11 @@
   max-height: 1000px;                   
   border-radius: 6px;
 }
+.lu-contrib-media video {
+  width: 100%;
+  height: auto;                   
+  border-radius: 6px;
+}
 .image-zoom {
   height: 1000px;
   transition: transform 0.3s ease; /* suaviza el zoom */

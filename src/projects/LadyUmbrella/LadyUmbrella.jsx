@@ -170,11 +170,11 @@ export default function LadyUmbrella() {
                 </div>
                 <p>Finally, Arena manages some combat flow events:</p>
                 <ul>
-                  <li>On Enemy Death: Remove enemy from zones and coordination component, notify allies the position of this enemy, try call reinforcements, updates wave's system and checks if combat is finished.</li>
-                  <li>On Player Death: Resets components, events, waves, triggers conditions and music. </li>
-                  <li>On Player Respawn: Clear enemies pool and reactivates the combat.</li>
-                  <li>On Player Shoot: Notify Enemies from sound source and start combat if is close enught.</li>
-                  <li>On Player Skip Arena: If the player manages to hit the exit trigger then the enemy pool is cleared and combat ends.</li>
+                  <li><strong>On Enemy Death:</strong> Remove enemy from zones and coordination component, notify allies the position of this enemy, try call reinforcements, updates wave's system and checks if combat is finished.</li>
+                  <li><strong>On Player Death:</strong> Resets components, events, waves, triggers conditions and music. </li>
+                  <li><strong>On Player Respawn:</strong> Clear enemies pool and reactivates the combat.</li>
+                  <li><strong>On Player Shoot:</strong> Notify Enemies from sound source and start combat if is close enught.</li>
+                  <li><strong>On Player Skip Arena:</strong> If the player manages to hit the exit trigger then the enemy pool is cleared and combat ends.</li>
                 </ul>
                  <div>
                     <img src="/assets/images/projects/LadyUmbrella/Systems/ArenaManagerMainCOnfig.png" alt="Spawn Point Instance" />
@@ -272,29 +272,80 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
 
              <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Enviroment Query System </h3>
-                <p>flee, flank and serach cover</p>
+                <p>I utilized Unreal Engine's Environment Query System (EQS) to drive a variety of dynamic decision-making processes for AI agents, enabling them to react intelligently to their surroundings. Below are the main use cases implemented:</p>
+                <h4>Cover Search</h4>
+                <p>Implemented using an Actor Generator that samples from custom CoverEntryPoint actors, representing entry positions for cover spots.The query applies several tests—including custom tests, dot product, distance, and trace—to identify the most optimal cover positions based on visibility, proximity, and orientation relative to the player.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaEye />
-                  <span>Watch EQS Diagram here!</span>
+                  <span>Watch EQS Diagram</span>
                 </a>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>EQS code here!</span>
+                  <span>EnvQueryTest: Filter Covers already selected</span>
                 </a>
-                <div className="lu-contrib-media">
-                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
-                </div>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>EnvQueryTest: Filter Covers inside Zone</span>
+                </a>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                <h4>Close Combat Movement</h4>
+                <p>Utilized a Circle Points Generator around the player to define potential movement targets during close-range engagements.
+Applied distance, dot product, and path existence tests to ensure the chosen positions are reachable and tactically advantageous.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaEye />
+                  <span>Watch EQS Diagram</span>
+                </a>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>EnvQueryContext: Player</span>
+                </a>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                <h4>Line of Sight Search</h4>
+                <p>Used a Grid Generator to sample potential points from which the AI could gain visual contact with the player.
+The selection process involved trace, distance, and dot product tests to ensure line-of-sight while maintaining spatial awareness.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaEye />
+                  <span>Watch EQS Diagram</span>
+                </a>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>EnvQueryContext: Owner Pawn</span>
+                </a>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                <h4>Flank Path Calculation</h4>
+                <p>Built using an Actor Generator referencing CoverEntryPoint actors. Central positions were filtered out via a TriggerVolume filter, isolating lateral points suitable for flanking.
+Additional dot product and distance tests were used to refine the selection, ensuring flanking routes were both effective and contextually valid.</p>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaEye />
+                  <span>Watch EQS Diagram</span>
+                </a>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>EnvQueryContext: TriggerVolume</span>
+                </a>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>EnvQueryTest: Filter covers in flank path</span>
+                </a>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
             </article>
 
             <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Arena Entry Behaviours </h3>
-                <p>Doors and Windows</p>
+                <p>In some of our game’s arenas, enemies were visibly popping in (spawning in plain sight of the player), which felt unnatural and broke immersion.</p>
+                <p>To address this, we implemented a door- and window-based arena entry system. Instead of appearing abruptly, enemies now enter the arena through visible entry points such as doors and windows.
+This approach makes encounters feel more dynamic, believable, and immersive, as players can see enemies emerging naturally from the environment before engaging in combat.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>BT Diagrams</span>
+                </a>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Door and Window Class</span>
                 </a>
                 <div className="lu-contrib-media">
-                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
                 </div>
             </article>
 

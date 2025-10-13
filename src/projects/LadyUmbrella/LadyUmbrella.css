@@ -97,6 +97,36 @@
 .contrib-icon { width: 48px; height: 48px; vertical-align: middle; margin-right: 0.6rem; }
 .lu-github-btn { margin: 1rem 0rem;}
 
+.lu-links {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+
+/* Behaviour Trees cards */
+.lu-bt-cards {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.lu-bt-card {
+  display: flex;
+  align-items: center;
+  background: #254a7a; /* darker blue */
+  border-radius: 16px;
+  padding: 1rem 5rem 1rem 0rem;
+  min-height: 120px;
+  max-width: fit-content;
+}
+
+.lu-bt-card h4 { padding: 1rem;}
+.lu-bt-card a { display: inline-flex; align-items: center; gap: 0.5rem; background: #5781b6; color: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 600;}
+.lu-bt-card a:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35);}
+.lu-bt-keyart { width:310px; height: 260px;}
+
+.lu-bt-links { display: flex; flex-direction: column; gap: 1rem; }
+
 .lu-contrib-media { 
   display: grid;
   grid-template-columns: repeat(2, 1fr);        
@@ -133,9 +163,9 @@
 }
 .lu-github { display: inline-block; margin-top: 0.75rem; color: #00fc47; }
 
-.lu-github-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #24292e; color: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+.lu-github-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #0c2c54; color: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
 .lu-github-btn svg { width: 18px; height: 18px; }
-.lu-github-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35); }
+.lu-github-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35);}
 
 .lu-details { background-image: url('/assets/images/projects/LadyUmbrella/Render_CityView.jpeg'); background-size: cover; background-position: center; padding: 7rem 13rem;}
 .lu-details ul { padding: 0; margin: 0;}
@@ -150,4 +180,8 @@
   .lu-summary-image { width: 100%; }
   .lu-features li { align-items: flex-start; gap: 0.5rem; }
   .feature-icon { width: 22px; height: 22px; }
+
+  /* stack Behaviour Trees cards on small screens */
+  .lu-bt-cards { flex-direction: column; }
+  .lu-bt-card { width: 100%; }
 }

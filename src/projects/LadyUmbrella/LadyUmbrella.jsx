@@ -2,7 +2,9 @@ import React from 'react';
 import './LadyUmbrella.css';
 import Footer from '../../components/Footer/Footer';
 import SocialLinks from '../../components/SocialLinks/SocialLinks';
-import { FaSteam, FaYoutube, FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaDownload } from 'react-icons/fa';
+import { FaSteam, FaYoutube, FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaDownload, FaStreetView, FaEye, FaEyeDropper, FaEyeSlash, FaDochub, FaAngleDoubleRight } from 'react-icons/fa';
+import { TbBinaryTreeFilled } from "react-icons/tb";
+import { TfiBlackboard } from "react-icons/tfi";
 // Header is provided globally by App; no per-page Header here to allow App's transition handlers to work
 
 const socials = [
@@ -108,12 +110,12 @@ export default function LadyUmbrella() {
                 </div>
                 <p>Triggers are configured to notify Arena after being overlaped by player in-game to:</p>
                  <ul>
-                  <li><strong>Activate Arena:</strong>Spawn Enemies, starting the first wave</li>
+                  <li><strong>Activate Arena:</strong> Spawn Enemies, starting the first wave</li>
                   <li><strong>Start Combat:</strong> Enemies start engaging the player</li>
                   <li><strong>Exit Arena:</strong> Cleans up enemy corpses, stops combat music and halts voice lines.</li>
                   <li><strong>Enter Arena Event:</strong> Launch all linked spawners to the current event</li>
                 </ul>
-                <p>And also, can be used to set combat zone number to all covers and spawners overlaping with it, used later for IA logic.</p>
+                <p>And also, can be used to set <strong>Combat Zone number</strong> to all covers and spawners overlaping with it, used later for IA logic.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>TriggerBoxArena Class here!</span>
@@ -123,7 +125,7 @@ export default function LadyUmbrella() {
                 </div>
                 <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
 
-                  <p>Arena Builder also serves as an In-game Manager, orchestrating the runtime behavior of each encounter.
+                  <p>Arena Builder also serves as an <strong>In-game Manager</strong>, orchestrating the runtime behavior of each encounter.
                   In order to have a modular, maintable and readable class, logic is delegated in different components. </p>
                   <h3>Enemy Spawner Component</h3>
                   <p>Responsible for managing all spawning logic in a combat arena. It organizes spawn points into waves, reinforcements groups ans special events. Tracks the progression throught waves, spawn timing and whether enemies spawn in order or randomly.
@@ -182,8 +184,8 @@ export default function LadyUmbrella() {
             </article>
 
             <article className="lu-contribution">
-                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Enemy class arquitecture.</h3>
-                <p>Enemy class arquitecture.</p>
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Class architecture </h3>
+                <p>A class architecture based on interfaces and inheritance has been followed for Characters, Controllers and weapons.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>View Code here!</span>
@@ -199,41 +201,80 @@ export default function LadyUmbrella() {
             </article>
 
              <article className="lu-contribution">
-                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Mafia Behaviour Tree </h3>
-                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
-                <div className="lu-contrib-media">
-                </div>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaDownload />
-                  <span>Watch BT Diagram here!</span>
-                </a>
-            </article>
+                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Behaviour Trees </h3>
+                <p>The AI Behavior Tree system is organized by archetype and it has been created following a hierarchy:
+                </p>
+                <ul>
+                  <li><strong>Main Tree:</strong> Controls the overall decision flow of the archetype (e.g., combat, patrol, arena entry).</li>
+                  <li><strong>Context Subtrees:</strong> Each represents a specific behavioral context or state (e.g., Combat, Patrol, EnterArena).
+These are activated based on Blackboard conditions or Selector priorities.</li>
+                  <li><strong>Action Subtrees:</strong> Contain concrete tactical actions such as attacking, finding cover or flee.</li>
+                </ul>
+                <p>This structure provides a <strong>modular and scalable approach</strong> to AI behavior design. Each subtree can be developed and <strong>tested independently, promoting cleaner iteration and debugging</strong>. Common behaviors can be reused across different archetypes, improving consistency and reducing redundant work. Additionally, new behaviors can be integrated without altering the main BT, keeping the system flexible and easy to maintain.</p>
+                
+                {/* Behaviour Trees cards */}
+                <div className="lu-bt-cards">
+                  <div className="lu-bt-card">
+                    <img className="lu-bt-keyart" src="/assets/images/projects/LadyUmbrella/Keyart_Mafioso.png" alt="Key Art Mafia" />
+                    <div className="lu-bt-links">
+                      <a className="lu-github-btn-card" href="/documents/BEHAVIOUR_TREES_MAFIA.pdf" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <TbBinaryTreeFilled />
+                          <span>Watch BT Diagram</span>
+                      </a>
+                       <a className="lu-github-btn-card" href="/documents/BLACKBOARD_MAFIA.pdf" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <TfiBlackboard />
+                          <span>Watch Blackboard</span>
+                      </a>
+                      <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                          <FaDochub />
+                          <span>Mafia GDD</span>
+                      </a>
+                      {/* placeholder for additional links */}
+                    </div>
+                  </div>
 
-              <article className="lu-contribution">
-                <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Agency Behaviour Trees </h3>
-                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
-                <div className="lu-contrib-media">
+                  <div className="lu-bt-card">
+                    <img className="lu-bt-keyart" src="/assets/images/projects/LadyUmbrella/Keyart_Agency.png" alt="Key Art Agency" />
+                    <div className="lu-bt-links">
+                     <a className="lu-github-btn-card" href="/documents/BEHAVIOUR_TREES_AGENCY.pdf" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <TbBinaryTreeFilled />
+                          <span>Watch BT Diagram Biter & Flanker</span>
+                      </a>
+                      <a className="lu-github-btn-card" href="/documents/BEHAVIOUR_TREES_SHIELDED_AGENCY.pdf" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <TbBinaryTreeFilled />
+                          <span>Watch BT Diagram Shielded Agent</span>
+                      </a>
+                       <a className="lu-github-btn-card" href="/documents/BLACKBOARD_AGENCY.pdf" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <TfiBlackboard />
+                          <span>Watch Blackboard</span>
+                      </a>
+                      <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                          <FaDochub />
+                          <span>Agency GDD</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaDownload />
-                  <span>Watch BT Diagram here!</span>
-                </a>
-
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaGithub />
-                  <span>BT Tasks code here!</span>
-                </a>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaGithub />
-                  <span>BT Services code here!</span>
-                </a>
-            </article>
+                <div className="lu-bt-card">
+                  <h4>Custom Task and Services in C++:</h4>
+                  <div className="lu-links">
+                    <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>BT Tasks code here!</span>
+                    </a>
+                    <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>BT Services code here!</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
 
              <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Enviroment Query System </h3>
                 <p>flee, flank and serach cover</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaDownload />
+                  <FaEye />
                   <span>Watch EQS Diagram here!</span>
                 </a>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">

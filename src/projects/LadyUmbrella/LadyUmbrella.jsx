@@ -8,11 +8,11 @@ import { TfiBlackboard } from "react-icons/tfi";
 // Header is provided globally by App; no per-page Header here to allow App's transition handlers to work
 
 const socials = [
-  { href: 'https://store.steampowered.com/', icon: FaSteam, label: 'Steam' },
-  { href: 'https://www.youtube.com/', icon: FaYoutube, label: 'YouTube' },
-  { href: 'https://www.linkedin.com/', icon: FaLinkedin, label: 'LinkedIn' },
-  { href: 'https://twitter.com/', icon: FaTwitter, label: 'Twitter' },
-  { href: 'https://www.instagram.com/', icon: FaInstagram, label: 'Instagram' },
+  { href: 'https://store.steampowered.com/app/3956890/Lady_Umbrella/', icon: FaSteam, label: 'Steam' },
+  { href: 'https://www.youtube.com/@ZuloInteractive', icon: FaYoutube, label: 'YouTube' },
+  { href: 'https://www.linkedin.com/company/zulo-interactive/posts/?feedView=all', icon: FaLinkedin, label: 'LinkedIn' },
+  { href: 'https://x.com/ladyumbrellavg?s=11&t=kByX6gVWvjWOaYSs7RYGzg', icon: FaTwitter, label: 'Twitter' },
+  { href: 'https://www.instagram.com/ladyumbrellavg?igsh=MXZ3Y29uZ2hpZjV0cg==', icon: FaInstagram, label: 'Instagram' },
 ];
 
 export default function LadyUmbrella() {
@@ -20,7 +20,7 @@ export default function LadyUmbrella() {
     <div className="lu-wrapper">
         <SocialLinks />
       <header className="lu-hero">
-        <video className="lu-hero-video" autoPlay muted loop playsInline src="/assets/videos/gameplay-demo.mp4" />
+        <video className="lu-hero-video" autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/BackgroundGameplay.mp4" />
         <div className="lu-hero-overlay">
           <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_Logo1_White.png" alt="Lady Umbrella Logo" className="lu-logo" />
           <p className="lu-tagline"><strong>An umbrella is more than protection — it's your arsenal.</strong></p>
@@ -185,7 +185,7 @@ export default function LadyUmbrella() {
 
             <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Class architecture </h3>
-                <p>A class architecture based on interfaces and inheritance has been followed for Characters, Controllers and weapons.</p>
+                <p>A class architecture based on interfaces and inheritance has been followed for <strong>Characters, Controllers and Weapons.</strong></p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>View Code here!</span>
@@ -273,9 +273,9 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
              <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Enviroment Query System </h3>
                 <p>I utilized Unreal Engine's Environment Query System (EQS) to drive a variety of dynamic decision-making processes for AI agents, enabling them to react intelligently to their surroundings. Below are the main use cases implemented:</p>
-                <h4>Cover Search</h4>
+                <h3>Cover Search</h3>
                 <p>Implemented using an Actor Generator that samples from custom CoverEntryPoint actors, representing entry positions for cover spots.The query applies several tests—including custom tests, dot product, distance, and trace—to identify the most optimal cover positions based on visibility, proximity, and orientation relative to the player.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="/assets/images/projects/LadyUmbrella/Systems/EQS/EQS_fleecover.png" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
@@ -287,11 +287,11 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                   <FaGithub />
                   <span>EnvQueryTest: Filter Covers inside Zone</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
-                <h4>Close Combat Movement</h4>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/SearchCoverEQS.mp4"/>
+                <h3>Close Combat Movement</h3>
                 <p>Utilized a Circle Points Generator around the player to define potential movement targets during close-range engagements.
 Applied distance, dot product, and path existence tests to ensure the chosen positions are reachable and tactically advantageous.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="/assets/images/projects/LadyUmbrella/Systems/EQS/EQSCloseCombat.png" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
@@ -299,11 +299,11 @@ Applied distance, dot product, and path existence tests to ensure the chosen pos
                   <FaGithub />
                   <span>EnvQueryContext: Player</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
-                <h4>Line of Sight Search</h4>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/CloseCombatEQS.mp4"/>
+                <h3>Line of Sight Search</h3>
                 <p>Used a Grid Generator to sample potential points from which the AI could gain visual contact with the player.
 The selection process involved trace, distance, and dot product tests to ensure line-of-sight while maintaining spatial awareness.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="/assets/images/projects/LadyUmbrella/Systems/EQS/EQSLineofsight.png" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
@@ -311,11 +311,11 @@ The selection process involved trace, distance, and dot product tests to ensure 
                   <FaGithub />
                   <span>EnvQueryContext: Owner Pawn</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
-                <h4>Flank Path Calculation</h4>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/LineSightEQS.mp4"/>
+                <h3>Flank Path Calculation</h3>
                 <p>Built using an Actor Generator referencing CoverEntryPoint actors. Central positions were filtered out via a TriggerVolume filter, isolating lateral points suitable for flanking.
 Additional dot product and distance tests were used to refine the selection, ensuring flanking routes were both effective and contextually valid.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="/assets/images/projects/LadyUmbrella/Systems/EQS/EQSflankcover.png" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
@@ -327,49 +327,153 @@ Additional dot product and distance tests were used to refine the selection, ens
                   <FaGithub />
                   <span>EnvQueryTest: Filter covers in flank path</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/FlankEQS.mp4"/>
             </article>
 
             <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Arena Entry Behaviours </h3>
                 <p>In some of our game’s arenas, enemies were visibly popping in (spawning in plain sight of the player), which felt unnatural and broke immersion.</p>
-                <p>To address this, we implemented a door- and window-based arena entry system. Instead of appearing abruptly, enemies now enter the arena through visible entry points such as doors and windows.
-This approach makes encounters feel more dynamic, believable, and immersive, as players can see enemies emerging naturally from the environment before engaging in combat.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaGithub />
-                  <span>BT Diagrams</span>
-                </a>
+                <p>To address this, we implemented a <strong>door- and window-based arena entry system.</strong> Instead of appearing abruptly, enemies now enter the arena through visible entry points such as doors and windows.
+This approach makes encounters feel more <strong>dynamic, believable, and immersive,</strong> as players can see enemies emerging naturally from the environment before engaging in combat.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>Door and Window Class</span>
                 </a>
                 <div className="lu-contrib-media">
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/DoorsEntryxd.mp4"/>
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/WindowsEntryxd.mp4"/>
                 </div>
             </article>
 
              <h2>My Contributions - Gameplay</h2>
               <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Gadgets Enemy Reactions </h3>
-                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
+                <p>Francesca’s umbrella is equipped with several <strong>unique gadgets</strong> that make it special. One of them is a <strong>Retractable Hook</strong> that can be fired from the umbrella and used for solving puzzles or for traversal purposes. In this case, I was responsible for implementing its interaction with enemies.</p>
+                <p>The umbrella’s hook can be fired to <strong>grab enemies and pull them toward the player close range—ideal</strong> for follow-up attacks while being stunned for a short duration before returning to normal behavior. If an enemy is pulled from a higher place, they’ll fall forward and die upon hitting the ground.</p>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>View Code here!</span>
                 </a>
                 <div className="lu-contrib-media">
-                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/HookGadget.mp4"/>
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/HookFalling.mp4"/>
+                </div>
+                <p>Francesca’s umbrella also includes an <strong>Electric Dart Gadget.</strong>
+The electric dart is a <strong>high-speed projectile that shocks enemies</strong>, stunning them for an extended period. The electric effect also chains between nearby enemies, making it effective against groups.</p>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>View Code here!</span>
+                </a>
+                <div className="lu-contrib-media">
+                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ElectricDardGadget.mp4"/>
                 </div>
             </article>
+
             <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Voice Line System </h3>
-                <p>Built editor tools for designers to script umbrella states and create encounters faster.</p>
+                <p>The Voice Line System includes the creation of a <strong>VoiceLineComponent</strong>, which can be attached to any character. Its responsabilities are:</p>
+                <ul>
+                  <li><strong>Handle voice line playback</strong> ( audio system with FMOD) and <strong>subtitle display</strong> ( UI system )</li>
+                  <li><strong>Load and organize voice lines from DataTables</strong> containing subtitle text, duration and state</li>
+                  <li><strong>Store index ranges for each State</strong> so it knows which lines belong to which state</li>
+                  <li><strong>Handle playback logic depending on context</strong> ( Cinematic, In-game cinematic or Combat)</li>
+                </ul>
                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Voice Line Component</span>
+                </a>
+                 <div className="lu-contrib-media">
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineComponent.png" alt="Spawn Point Instance"/>
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/DataTableVoiceLine.png" alt="Spawn Point Instance"/>
+                </div>
+                <h3>Cinematics - TriggerBoxGadgets</h3>
+                <p>Main story cinematics are triggered by a special actor called TriggerBoxGadgets.
+This actor is placed in the level and activates when the player collides with it.
+When triggered, it performs several actions:</p>
+                <ul>
+                  <li>Launches the Level Sequence (Master Sequence) that controls the cinematic.</li>
+                  <li>Activates the “Skip” button in the UI so the player can skip the scene if desired.</li>
+                  <li>Optionally unlocks new gadgets or abilities after the cinematic finishes.</li>
+                </ul>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>TriggerBoxGadgets</span>
                 </a>
                 <div className="lu-contrib-media">
-                <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png" alt="Tools screenshot" />
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/TriggerBoxGadgets.png" alt="Spawn Point Instance"/>
+                  <iframe
+                    src="https://www.youtube.com/embed/atdvxoF7ydY"
+                    title="Lady Umbrella Trailer"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                  <p>
+                  MasterSequence blueprint calls directly into VoiceLineComponent to speak a sequential
+                  voice line.
+                </p>
+                <h4>Flow</h4>
+                 <ul>
+                  <li>Cinematic triggers a blueprint node ( event ) at specific keyframe</li>
+                  <li>Player or NPC's VoiceLineComponent receives the call.</li>
+                  <li>VoiceLineComponent picks next line for that chapter from the DataTable based on state index and plays FMOD event ans show subtitles.</li>
+                </ul>
+                <p>This makes voice playback synchronized with cinematic timing, without harcoding sounds into sequences.</p>
+                <div className="lu-contrib-media">
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/LevelSequenceTrigger.png" alt="Spawn Point Instance"/>
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/CinematicVoiceLine.png" alt="Spawn Point Instance" />
+                </div>
+                <h3>In-Game Cinematics - TriggerCinematic</h3>
+                <p>In-Game cinematics are short, scripted dialogues or cutscenes that happen during gameplay - triggered by player actions. This is
+                  handle by the ATriggerCinematic actor.
+                </p>
+                <h4>How It Works</h4>
+                <ul>
+                  <li><strong>Detection:</strong> Trigger's box collision detects when player enters</li>
+                  <li><strong>Initialization:</strong> Builds VoiceLinInGameDTO struct that contains state, actor and index</li>
+                  <li><strong>Sequence Setup:</strong> Use CinematicQueues predefined, it determinates the order of speakers for that cinematic</li>
+                  <li><strong>Spawning:</strong> If necessary, it spawns secondary characters ( Marco, Vincenzo or Agency)</li>
+                  <li><strong>PlayBack loop:</strong> Starts dialogue of current actor, waits for voice duration then calls next line</li>
+                </ul>
+                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>TriggerCinematic</span>
+                </a>
+                 <div className="lu-contrib-media">
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/TriggerCinematicIngame.png" alt="Spawn Point Instance"/>
+                  <iframe
+                    src="https://www.youtube.com/embed/uViJyhhvP90"
+                    title="In-Game Cinematic System – Dynamic Dialogue Trigger (Unreal Engine)"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder="0"
+                    allowFullScreen
+                  />
+                </div>
+                 <h3>Combat Voice Lines - VoiceLineManager</h3>
+                 <p>VoiceLineManager is a subsystem that manages voice lines dynamically during combats. It coordinates who can speak,
+                  when and with what priority, ensuring lines dont overlap or repeat too often.
+                 </p>
+                 <h4>Flow</h4>
+                 <ul>
+                  <li>When a character (enemy or player) performs an action, its VoiceLineComponent requests the VoiceLineManager to play the voice line corresponding to that action’s state.</li>
+                  <li>VoiceLineManager store VoiceLineDTO in the queue with timestamp</li>
+                  <li>Manager periodically procces voice lines queue removing expired request and choosing what to play.</li>
+                 </ul>
+                 <p>This ensures that even with many characters trying to speak at once, only one voice line plays at a time.</p>
+                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>VoiceLineManager</span>
+                </a>
+                 <div className="lu-contrib-media">
+                  <iframe
+                    src="https://www.youtube.com/embed/DNBxl4mJbmM"
+                    title="Lady Umbrella Trailer"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineSystemDiagram.png" alt="Spawn Point Instance"/>
                 </div>
             </article>
         </section>
@@ -377,11 +481,32 @@ This approach makes encounters feel more dynamic, believable, and immersive, as 
         <section className="lu-details">
             <h2>Project Details</h2>
             <ul>
-                <li><b>Engine:</b> Custom C++ engine + ECS</li>
-                <li><b>Role:</b> AI, Gameplay Tools Programmer</li>
-                <li><b>Team size:</b> 40</li>
-                <li><b>Platforms:</b> PC, Consoles</li>
-            </ul>
+            <li><b>Studio:</b> Zulo Interactive</li>
+            <li><b>Genre:</b> Action-adventure shooter</li>
+            <li><b>Platforms:</b> PC - Steam </li>
+            <li><b>Duration:</b>
+              <ol>
+                <li>Design and Prototype: 2025 January - 2025 Fabruary</li>
+                <li>First playable: 2025 Fabruary - 2025 April</li> 
+                <li>Alpha : 2025 April - 2025 June</li>
+                <li>Beta : 2025 June - 2025 September</li>
+                <li>Gold : 2025 September - 2025 October</li>
+              </ol>
+            </li>
+            <li><b>Team Size:</b>
+            <ol>
+              <li>Game Designers: 8</li>
+              <li>Programmers: 8</li>
+              <li>Generalist Artist: 3</li>
+              <li>Concept Artist: 5</li>
+              <li>Animation: 5</li>
+              <li>Rigging: 3</li>
+              <li>Sound: 3</li>
+              <li>Voice Actor: 2</li>
+            </ol>
+            </li>
+            <li><b>Engine and Tools: </b>Unreal Engine 5.5, Maya, Blender, ZBrush </li>
+          </ul>
         </section>
        </main>
        <Footer />

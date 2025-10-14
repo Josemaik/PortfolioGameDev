@@ -37,7 +37,7 @@
 }
 .lu-social-link:hover { background: #5781b6; color: #f4f4f4; transition: all 0.2s ease;  transform: scale(1.2); }
 
-.lu-main { width: 100%; margin: 2rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #5781b6;}
+.lu-main { width: 100%; margin: 0rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #5781b6;}
 .lu-summary { background-image: url('/assets/images/projects/LadyUmbrella/MainKeyArt_01.png'); background-size: cover; background-position: center; padding: 1rem 12rem 10rem 10rem; border-radius: 0px; }
 .lu-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 70rem;}
 /* .lu-summary-image { width: 320px; flex-shrink: 0; } */
@@ -132,7 +132,8 @@
   grid-template-columns: repeat(2, 1fr);        
   gap: 1rem;
   max-width: 1500px;  
-  width: 100%;         
+  width: 100%;   
+  align-items: center;      
 }
 
 .lu-contrib-media img {
@@ -146,6 +147,13 @@
   height: auto;                   
   border-radius: 6px;
 }
+.lu-contrib-media iframe{
+  width: 100%;
+  height: 500px;
+  max-height: 1000px;                   
+  border-radius: 6px;
+}
+
 .image-zoom {
   height: 1000px;
   transition: transform 0.3s ease; /* suaviza el zoom */
@@ -175,7 +183,8 @@
 .lu-details { background-image: url('/assets/images/projects/LadyUmbrella/Render_CityView.jpeg'); background-size: cover; background-position: center; padding: 7rem 13rem;}
 .lu-details ul { padding: 0; margin: 0;}
 .lu-details ul { list-style: none; padding: 1rem 0rem; margin: 0; display: grid; gap: 0.5rem; color: #fff; }
-
+.lu-details ol { padding-left: 2rem; }
+.lu-details ol li { margin: 0.08rem 0; line-height: 1.25; }
 .lu-wrapper .footer-copy { color: #ffffff; }
 .lu-wrapper .footer-links a:hover { color: #5781b6; }
 /* Responsive */

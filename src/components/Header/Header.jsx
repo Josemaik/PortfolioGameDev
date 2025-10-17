@@ -27,7 +27,16 @@ const Header = ({ onHomeClick, onNavigate }) => {
           onHomeClick?.();
         }}>Home</a>
   <a href="https://github.com/Josemaik" target="_blank">GitHub</a>
-  <a href="#contact" onClick={(e) => { e.preventDefault(); onNavigate?.('#contact'); }}>Contact</a>
+  <a href="#contact" onClick={(e) => { 
+          e.preventDefault();
+          // If we're not on the root, set pending scroll and navigate to home so App can handle the scroll
+          if (typeof window !== 'undefined' && window.location.pathname !== '/') {
+            try { localStorage.setItem('pendingScrollTarget', '#contact'); } catch(e){}
+            window.location.href = '/';
+            return;
+          }
+          onNavigate?.('#contact');
+        }}>Contact</a>
   <a href="/documents/CV_JoseManuel.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
       <div className="actions">

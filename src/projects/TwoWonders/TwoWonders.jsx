@@ -133,7 +133,7 @@ export default function TwoWonders() {
               <img src="/assets/images/projects/TwoWonders/AIEngine_diagram.png" alt="Tools screenshot" />
             </div>
             <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI Component</h3>
                 </div>
@@ -143,7 +143,7 @@ export default function TwoWonders() {
                 </p>
             </div>
             <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className ="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI Manager</h3>
                 </div>
@@ -151,7 +151,7 @@ export default function TwoWonders() {
                 </p>
             </div>
             <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI System</h3>
                 </div>
@@ -159,7 +159,7 @@ export default function TwoWonders() {
                 </p>
             </div>
              <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Behaviour Trees</h3>
                 </div>
@@ -171,14 +171,14 @@ export default function TwoWonders() {
                  </div>
             </div>
              <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Blackboard</h3>
                 </div>
                 <p>Is a shared data container to manage communication and coordination between different AIs.It is used by behaviour tree and updated by AI system.</p>
             </div>
              <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Steering Behaviours</h3>
                 </div>
@@ -186,7 +186,7 @@ export default function TwoWonders() {
                 <p>n Two Wonders I implement the following types of movement: Seek, Arrive, Flee, Pursue, Avoid, Evade and Flocking. All of these return a Steer_t structure, which contains information about the agent's speed, orientation, and whether it has arrived.</p>
             </div>
              <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Pathfinding </h3>
                 </div>
@@ -199,7 +199,7 @@ export default function TwoWonders() {
                 </div>
             </div>
             <div className="tw-contrib-feature">
-                <div class="tw-contrib-feature-title">
+                <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Sensorial Perception</h3>
                 </div>
@@ -232,7 +232,9 @@ Throughout the development, I created different interfaces to debug the AI, firs
               <FaGithub />
               <span>View Code here!</span>
             </a>
-            <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/SkeletalAnimation.mp4"/>
+            <div className="tw-contrib-media">
+              <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/SkeletalAnimation.mp4"/>
+            </div>
           </article>
           <article className="tw-contribution">
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> Event Manager and Trigger System </h3>
@@ -244,7 +246,9 @@ DispatchEvents method processes the queue in LIFO order, iterating listeners (en
               <FaGithub />
               <span>View Code here!</span>
             </a>
-             <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/EventTrigger.mp4"/>
+            <div className="tw-contrib-media">
+              <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/EventTrigger.mp4"/>
+            </div>
           </article>
         </section>
 

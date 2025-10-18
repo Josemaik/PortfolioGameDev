@@ -7,7 +7,7 @@ import {
   SiMysql, SiGit, SiGithub
 } from 'react-icons/si';
 import { PiFileCSharpFill } from "react-icons/pi";
-import { FaCode, FaMicrochip } from 'react-icons/fa';
+import { FaCode, FaJava, FaMicrochip } from 'react-icons/fa';
 
 const TechnicalSkills = () => {
   const skillCategories = [
@@ -15,14 +15,14 @@ const TechnicalSkills = () => {
       title: "Game Engines",
       skills: [
         { 
-          name: "Unity",
-          icon: <SiUnity />,
-          description: "Desarrollo de juegos, herramientas de editor, shaders personalizados"
-        },
-        { 
           name: "Unreal Engine",
           icon: <SiUnrealengine />,
           description: "Blueprints, gameplay en C++"
+        },
+        { 
+          name: "Unity",
+          icon: <SiUnity />,
+          description: "Desarrollo de juegos, herramientas de editor, shaders personalizados"
         }
       ]
     },
@@ -38,12 +38,17 @@ const TechnicalSkills = () => {
           name: "C#",
           icon: <PiFileCSharpFill />,
           description: "Unity, backend y herramientas"
+        },
+        { 
+         name: "Java",
+         icon: <FaJava />,
+         description: "Optimización low-level, interfacing hardware"
+        },
+        { 
+          name: "Assembly",
+          icon: <FaMicrochip />,
+          description: "Optimización low-level, interfacing hardware"
         }
-        // { 
-        //   name: "Assembly",
-        //   icon: <FaMicrochip />,
-        //   description: "Optimización low-level, interfacing hardware"
-        // }
       ]
     },
     {
@@ -136,7 +141,7 @@ const TechnicalSkills = () => {
                       <span className="skill-icon">{skill.icon}</span>
                       <span className="skill-name">{skill.name}</span>
                     </div>
-                    <div className="skill-description">{skill.description}</div>
+                    {/* <div className="skill-description">{skill.description}</div> */}
                   </div>
                 ))}
               </div>

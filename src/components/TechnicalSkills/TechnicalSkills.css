@@ -20,8 +20,8 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem 2.5rem;
   align-items: start;
+  gap: 1rem;
 }
 
 .skills-container > .skill-category:last-child:nth-child(odd) {
@@ -64,6 +64,7 @@
 }
 
 .skill-item {
+  min-width: 200px;
   background: #181818;
   padding: 1.2rem 1rem;
   border-radius: 10px;

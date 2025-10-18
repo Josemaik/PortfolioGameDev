@@ -22,12 +22,7 @@ const Modal = ({ experience, onClose }) => {
         </button>
 
         <div className="modal-header">
-          <img src={experience.logo} alt={experience.company} />
-          <div>
-            <h3>{experience.role}</h3>
-            <h4>{experience.company}</h4>
-            <span>{experience.period}</span>
-          </div>
+          <h3>My Contributions:</h3>
         </div>
 
         <div className="modal-body">

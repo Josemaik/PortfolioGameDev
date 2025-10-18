@@ -35,8 +35,8 @@ const About = () => {
           <div className="about-text">
             <h2>My Name is Jose Manuel, Game Programmer</h2>
             <p>I'm a <strong>Software Engineer</strong> passionate about video game development, specializing in <strong>C++ and Unreal Engine</strong>. </p>
-            <p>Last year I finished my degree in <strong>Multimedia Engeneering</strong> in which I take my first steps in video game development and where my curiosity grew about the technical aspects of this field.
-               Now I'm doing a <strong>Master's degree in video game programming</strong> to extend my knowledge with the help of industry programmers.</p>
+            <p>In 2024, I completed my degree in <strong>Multimedia Engineering</strong>, where I took my first steps in video game development and grew curious about the technical aspects of this field. 
+              I recently completed a <strong>Master's degree in Video Game Programming</strong>, expanding my knowledge with the help of industry programmers.</p>
               <p>In recent projects, I've focused on crafting custom <strong>AI systems</strong> — from behavior trees, blackboards, and navigation systems to AI perception frameworks — to create dynamic and engaging gameplay experiences. I also build editor tools and systems that allow designers to create engaging encounters and interactions with npcs.
               I’ve developed <strong>ECS-based game engines</strong> from scratch, emphasizing performance, scalability, and <strong>data-driven architectures</strong>. This experience deepened my understanding of how to design flexible, maintainable systems that push technical limits without sacrificing creativity.</p>
             <div className="about-cta">

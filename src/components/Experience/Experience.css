@@ -101,6 +101,8 @@
   object-fit: contain;
 }
 
+.exp-info p { margin-top: 0.5rem;}
+
 .exp-info h3 {
   font-size: 1.2rem;
   color: #1a1a1a;
@@ -206,17 +208,15 @@
   color: #1a1a1a;
 }
 
-.modal-header {
+.modal- {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 
-.modal-header img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
+.modal-header h3,.modal-header span {margin-left: 1.5rem;}
+
+.modal-header p { margin-top: 1rem;}
 
 .modal-body ul {
   list-style-type: disc;

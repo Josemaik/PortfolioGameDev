@@ -417,7 +417,7 @@ When triggered, it performs several actions:</p>
                  <ul>
                   <li>Cinematic triggers a blueprint node ( event ) at specific keyframe</li>
                   <li>Player or NPC's VoiceLineComponent receives the call.</li>
-                  <li>VoiceLineComponent picks next line for that chapter from the DataTable based on state index and plays FMOD event ans show subtitles.</li>
+                  <li>VoiceLineComponent picks next line for that chapter from the DataTable based on state index and plays FMOD event and show subtitles.</li>
                 </ul>
                 <p>This makes voice playback synchronized with cinematic timing, without harcoding sounds into sequences.</p>
                 <div className="lu-contrib-media">

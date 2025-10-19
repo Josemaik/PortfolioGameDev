@@ -20,7 +20,16 @@ export default function LadyUmbrella() {
     <div className="lu-wrapper">
         <SocialLinks />
       <header className="lu-hero">
-        <video className="lu-hero-video" autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/BackgroundGameplay.mp4" />
+        <div className="lu-hero-video-wrapper">
+          <iframe
+            className="tw-hero-video"
+            src="https://www.youtube.com/embed/1y_tEK_6Vso?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=1y_tEK_6Vso"
+            title="Lady Umbrella - Short CutScenes"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            />
+        </div>
         <div className="lu-hero-overlay">
           <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_Logo1_White.png" alt="Lady Umbrella Logo" className="lu-logo" />
           <p className="lu-tagline"><strong>An umbrella is more than protection — it's your arsenal.</strong></p>

@@ -20,8 +20,30 @@
 }
 .lu-wrapper .social-icon::after{border-left: 8px solid #ffffff;}
 
-.lu-hero { position: relative; height: 60vh; overflow: hidden; }
-.lu-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
+.lu-hero { position: relative;width: 100vw;  height: 60vh; overflow: hidden; }
+.lu-hero-video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 210%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.lu-hero-video { 
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  border: 0;
+  opacity: 0.45;
+  pointer-events: none;
+}
 .lu-hero-overlay { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.5rem; }
 .lu-logo { width: 350px; max-width: 70%; height: auto; display: block; margin-top: 3rem;}
 .lu-tagline { color: rgb(255, 255, 255); opacity: 0.95; margin: 0.25rem 0 0.75rem; font-size: 1.3rem}

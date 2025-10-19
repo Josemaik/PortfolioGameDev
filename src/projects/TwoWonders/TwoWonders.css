@@ -91,7 +91,7 @@
 .tw-contributions a{ color: #ffffff;}
 .tw-contributions h2 { font-size:2.4rem; color:#ffffff; }
 .tw-contribution { background: rgba(255,255,255,0.03); padding:1rem; border-radius:8px; }
-.tw-contribution video { width: 700px; max-width: 100%; border-radius: 6px; }
+.tw-contribution iframe { width: 1200px; height: 600px; max-width: 100%; border-radius: 6px; }
 .contrib-icon { width:48px; height:48px; margin-right:0.6rem; }
 .tw-github-btn { 
   display:inline-flex;
@@ -110,6 +110,9 @@
 .tw-github-btn:hover{  transform: scale(1.1);}
 .tw-contrib-media { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; align-items: center; max-width: 100%;}
 .tw-contrib-media img { width:700px; max-width:760px; max-height: 760px;  border-radius:6px;}
+.tw-contrib-media iframe {width: 1200px; height: 400px; max-width: 100%; border-radius: 6px; }
+
+.tw-contrib-media-column{display: flex; flex-direction: column;}
 
 .tw-contrib-feature { margin: 1rem;}
 .tw-contrib-feature img { width: 100%; max-width: 760px; border-radius: 6px; }

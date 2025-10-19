@@ -115,7 +115,7 @@
 .lu-contribution p{margin: 1rem 0rem;}
 .lu-contribution ul { padding-left: 1.5rem; }
 .lu-contribution div img {max-width: 1200px; margin: 3rem 0rem;}
-.lu-contribution video{max-width: 1200px; border-radius: 6px; margin: 0 auto;}
+.lu-contribution iframe{width: 1200px; height: 650px; max-width: 1200px; border-radius: 6px; margin: 0 auto;}
 .contrib-icon { width: 48px; height: 48px; vertical-align: middle; margin-right: 0.6rem; }
 .lu-github-btn { margin: 1rem 0rem;}
 

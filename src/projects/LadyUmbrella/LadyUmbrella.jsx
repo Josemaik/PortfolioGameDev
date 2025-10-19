@@ -132,7 +132,13 @@ export default function LadyUmbrella() {
                 <div>
                   <img src="/assets/images/projects/LadyUmbrella/Systems/ArenaTriggerPanel.png" alt="Spawn Point Instance" />
                 </div>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ArenaManagerTool.mp4"/>
+                 <iframe
+                  src="https://www.youtube.com/embed/0zWSJvp-Yjg?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=0zWSJvp-Yjg "
+                  title="Lady Umbrella - Short CutScenes"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                 />
 
                   <p>Arena Builder also serves as an <strong>In-game Manager</strong>, orchestrating the runtime behavior of each encounter.
                   In order to have a modular, maintable and readable class, logic is delegated in different components. </p>
@@ -296,7 +302,13 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                   <FaGithub />
                   <span>EnvQueryTest: Filter Covers inside Zone</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/SearchCoverEQS.mp4"/>
+                 <iframe
+                  src="https://www.youtube.com/embed/wuVTttlo5_c?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=wuVTttlo5_c"
+                  title="Lady Umbrella - Short CutScenes"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                 />
                 <h3>Close Combat Movement</h3>
                 <p>Utilized a Circle Points Generator around the player to define potential movement targets during close-range engagements.
 Applied distance, dot product, and path existence tests to ensure the chosen positions are reachable and tactically advantageous.</p>
@@ -308,7 +320,13 @@ Applied distance, dot product, and path existence tests to ensure the chosen pos
                   <FaGithub />
                   <span>EnvQueryContext: Player</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/CloseCombatEQS.mp4"/>
+                <iframe
+                  src="https://www.youtube.com/embed/nESAQOz5UKc?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=nESAQOz5UKc"
+                  title="Lady Umbrella - Short CutScenes"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                 />
                 <h3>Line of Sight Search</h3>
                 <p>Used a Grid Generator to sample potential points from which the AI could gain visual contact with the player.
 The selection process involved trace, distance, and dot product tests to ensure line-of-sight while maintaining spatial awareness.</p>
@@ -320,7 +338,13 @@ The selection process involved trace, distance, and dot product tests to ensure 
                   <FaGithub />
                   <span>EnvQueryContext: Owner Pawn</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/LineSightEQS.mp4"/>
+                <iframe
+                  src="https://www.youtube.com/embed/CS4ZcmBSUWk?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=CS4ZcmBSUWk"
+                  title="Lady Umbrella - Short CutScenes"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                 />
                 <h3>Flank Path Calculation</h3>
                 <p>Built using an Actor Generator referencing CoverEntryPoint actors. Central positions were filtered out via a TriggerVolume filter, isolating lateral points suitable for flanking.
 Additional dot product and distance tests were used to refine the selection, ensuring flanking routes were both effective and contextually valid.</p>
@@ -336,7 +360,13 @@ Additional dot product and distance tests were used to refine the selection, ens
                   <FaGithub />
                   <span>EnvQueryTest: Filter covers in flank path</span>
                 </a>
-                <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/FlankEQS.mp4"/>
+                <iframe
+                  src="https://www.youtube.com/embed/aeK9vcfFY3I?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=aeK9vcfFY3I"
+                  title="Lady Umbrella - Short CutScenes"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                 />
             </article>
 
             <article className="lu-contribution">

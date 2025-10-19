@@ -129,7 +129,13 @@ export default function TwoWonders() {
             <p>Our game is based on the model of <b>The legend of Zelda</b>. For this reason, we start by implementing its basics mechanics such as collecting objects, sword attack, shield, open doors among others.</p>
             <p>My job here was to implement the basic Zelda enemies such as the Keese (random movement), Octorok (random movement and shooting),AquaMentus (fires 3 projectiles) or RiverZora (change position and shoot towards the player)</p>
             <p>This model was implemented with <a href="https://www.raylib.com/" target="_blank">Raylib library</a>.</p>
-            <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/Modelo_Zelda.mp4"/>
+            <iframe
+              src="https://www.youtube.com/embed/21gyZ4O-3V4?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=21gyZ4O-3V4"
+              title="Lady Umbrella - Short CutScenes"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
           </article>
           <article className="tw-contribution">
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> AI Engine </h3>
@@ -242,7 +248,13 @@ Throughout the development, I created different interfaces to debug the AI, firs
               <span>View Code here!</span>
             </a>
             <div className="tw-contrib-media">
-              <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/SkeletalAnimation.mp4"/>
+             <iframe
+              src="https://www.youtube.com/embed/dVtGha5Plkw?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=dVtGha5Plkw"
+              title="Lady Umbrella - Short CutScenes"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
             </div>
           </article>
           <article className="tw-contribution">

@@ -268,7 +268,13 @@ DispatchEvents method processes the queue in LIFO order, iterating listeners (en
               <span>View Code here!</span>
             </a>
             <div className="tw-contrib-media">
-              <video autoPlay muted loop playsInline src="/assets/videos/TwoWonders/EventTrigger.mp4"/>
+              <iframe
+              src="https://www.youtube.com/embed/7pjTfWEuw7M?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=7pjTfWEuw7M"
+              title="Lady Umbrella - Short CutScenes"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowFullScreen
+            />
             </div>
           </article>
         </section>

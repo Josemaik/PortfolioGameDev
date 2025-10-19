@@ -15,7 +15,16 @@
 }
 .tw-wrapper .social-icon::after{border-left: 8px solid #b78bad;}
 
-.tw-hero { position: relative; height: 60vh; overflow: hidden; }
+.tw-hero { position: relative;width: 100vw; height: 60vh; overflow: hidden; }
+.tw-hero-video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 210%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
 .tw-hero-video{position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
 .tw-hero-overlay {  position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 0.2rem; }
 .tw-logo { width: 420px; max-width: 70%; height: auto; display: block; filter: drop-shadow(0 6px 18px rgba(0,0,0,0.6)); margin-top: 2rem;}

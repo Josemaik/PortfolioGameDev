@@ -18,7 +18,16 @@ export default function TwoWonders() {
     <div className="tw-wrapper">
       <SocialLinks />
       <header className="tw-hero">
-        <video className="tw-hero-video" autoPlay muted loop playsInline src="/assets/videos/TwoWonders/BackgroundGameplay.mp4"/>
+         <div className="tw-hero-video-wrapper">
+          <iframe
+            className="tw-hero-video"
+            src="https://www.youtube.com/embed/iu3Jb4uRSOo?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=iu3Jb4uRSOo"
+            title="Lady Umbrella - Short CutScenes"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            />
+        </div>
         <div className="tw-hero-overlay">
           <img src="/assets/images/projects/TwoWonders/logo_two_wonders.png" alt="Two Wonders Logo" className="tw-logo" />
           <p className="tw-tagline"><strong>Your new adventure as a magician's apprentice is about to begin... ✨</strong></p>

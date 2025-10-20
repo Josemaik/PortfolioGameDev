@@ -60,7 +60,7 @@ const projects = [
   image: '/assets/images/projects/CodZombiesPrototype/CodPrototype.png',
     description: ( 
         <>
-        <strong>FPS Prototype</strong> made with Unreal Engine.
+        <strong>FPS Prototype</strong> made in Unreal Engine 5 based in <strong>Call of Duty Zombies</strong>.
         </>
     ),
     role: (
@@ -76,7 +76,7 @@ const projects = [
   image: '/assets/images/projects/ScifiShooter/UnexpectedMission.png',
     description: ( 
         <>
-        <strong>Sci-Fi Shooter prototype</strong> made in Unreal Engine 5 based in <strong>NOVA 3</strong> 
+        <strong>Sci-Fi Shooter prototype</strong> made in Unreal Engine 5 based in <strong>NOVA 3.</strong> 
         </>
     ),
     role: (

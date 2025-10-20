@@ -37,7 +37,6 @@ const Header = ({ onHomeClick, onNavigate }) => {
           }
           onNavigate?.('#contact');
         }}>Contact</a>
-  <a href="/documents/CV_JoseManuel.pdf" target="_blank" rel="noopener noreferrer">CV</a>
       </nav>
       <div className="actions">
         <button

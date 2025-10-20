@@ -4,7 +4,7 @@ import "./Hero.css";
 const keywords = ["AI", "Tools", "Gameplay"];
 const videos = {
   AI: "/assets/videos/ai-gameplay.mp4",
-  Tools: "/assets/videos/gameplay-demo.mp4",
+  Tools: "/assets/videos/tools-gameplay.mp4",
   Gameplay: "/assets/videos/gameplay-demo.mp4",
 };
 

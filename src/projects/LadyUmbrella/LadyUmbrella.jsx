@@ -379,8 +379,20 @@ This approach makes encounters feel more <strong>dynamic, believable, and immers
                   <span>Door and Window Class</span>
                 </a>
                 <div className="lu-contrib-media">
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/DoorsEntryxd.mp4"/>
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/WindowsEntryxd.mp4"/>
+                  <iframe
+                    src="https://www.youtube.com/embed/ycLtgsO1DT8?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=ycLtgsO1DT8"
+                    title="LadyUmbrella - Door Arena Entry System"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                 />
+                  <iframe
+                    src="https://www.youtube.com/embed/u5nL_m9nEgo?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=u5nL_m9nEgo"
+                    title="LadyUmbrella - Door Arena Entry System"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                 />
                 </div>
             </article>
 
@@ -394,8 +406,20 @@ This approach makes encounters feel more <strong>dynamic, believable, and immers
                   <span>View Code here!</span>
                 </a>
                 <div className="lu-contrib-media">
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/HookGadget.mp4"/>
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/HookFalling.mp4"/>
+                   <iframe
+                    src="https://www.youtube.com/embed/G52Ih6jW1kA?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=G52Ih6jW1kA"
+                    title="LadyUmbrella - Door Arena Entry System"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                 />
+                 <iframe
+                    src="https://www.youtube.com/embed/CiKIJiGfW64?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=CiKIJiGfW64"
+                    title="LadyUmbrella - Door Arena Entry System"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                 />
                 </div>
                 <p>Francesca’s umbrella also includes an <strong>Electric Dart Gadget.</strong>
 The electric dart is a <strong>high-speed projectile that shocks enemies</strong>, stunning them for an extended period. The electric effect also chains between nearby enemies, making it effective against groups.</p>
@@ -404,7 +428,13 @@ The electric dart is a <strong>high-speed projectile that shocks enemies</strong
                   <span>View Code here!</span>
                 </a>
                 <div className="lu-contrib-media">
-                  <video autoPlay muted loop playsInline src="/assets/videos/LadyUmbrella/ElectricDardGadget.mp4"/>
+                  <iframe
+                    src="https://www.youtube.com/embed/6DBMlvp9mD0?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=6DBMlvp9mD0"
+                    title="LadyUmbrella - Door Arena Entry System"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowFullScreen
+                 />
                 </div>
             </article>
 

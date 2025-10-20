@@ -127,6 +127,10 @@ export default function TwoWonders() {
               <FaGithub />
               <span>MetaProgram</span>
             </a>
+             <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/managers/game.cpp" target="_blank" aria-label="View code on GitHub">
+              <FaGithub />
+              <span>Game</span>
+            </a>
             <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/tree/main/src/components" target="_blank" aria-label="View code on GitHub">
               <FaGithub />
               <span>Components</span>
@@ -134,6 +138,10 @@ export default function TwoWonders() {
             <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/utils/types.hpp" target="_blank" aria-label="View code on GitHub">
               <FaGithub />
               <span>Tags and Singletons</span>
+            </a>
+             <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/managers/game_engine.cpp" target="_blank" aria-label="View code on GitHub">
+              <FaGithub />
+              <span>Facade Engine</span>
             </a>
             <div className="tw-contrib-media">
               <img src="/assets/images/projects/TwoWonders/ECS-diagram.png" alt="Systems screenshot" />
@@ -145,21 +153,23 @@ export default function TwoWonders() {
             <p>Our game is based on the model of <b>The legend of Zelda</b>. For this reason, we start by implementing its basics mechanics such as collecting objects, sword attack, shield, open doors among others.</p>
             <p>My job here was to implement the basic Zelda enemies such as the Keese (random movement), Octorok (random movement and shooting),AquaMentus (fires 3 projectiles) or RiverZora (change position and shoot towards the player)</p>
             <p>This model was implemented with <a href="https://www.raylib.com/" target="_blank">Raylib library</a>.</p>
-            <iframe
-              src="https://www.youtube.com/embed/21gyZ4O-3V4?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=21gyZ4O-3V4"
-              title="Lady Umbrella - Short CutScenes"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              allowFullScreen
-            />
+            <div className="tw-contrib-media-column">
+            <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/bf66eb53eea4b80f9b43968c6e6c3071ace0c36c/src/managers/game_engine.cpp" target="_blank" aria-label="View code on GitHub">
+              <FaGithub />
+              <span>Game Engine Raylib</span>
+            </a>
+              <iframe
+                src="https://www.youtube.com/embed/21gyZ4O-3V4?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=21gyZ4O-3V4"
+                title="Lady Umbrella - Short CutScenes"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </article>
           <article className="tw-contribution">
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> AI Engine </h3>
             <p>I developed an AI engine from scratch in c++ which would be in charge of processing different entities such as enemies or npcs and giving them behaviors according to their previous design.</p>
-            <a className="tw-github-btn" href="#" aria-label="View code on GitHub">
-              <FaGithub />
-              <span>View Code here!</span>
-            </a>
             <div className="tw-contrib-media">
               <img src="/assets/images/projects/TwoWonders/AIEngine_diagram.png" alt="Tools screenshot" />
             </div>
@@ -167,6 +177,10 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI Component</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/components/ai_component.hpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>This component define characteristics about AI entities.Between them, we can find fisics aspects(velocity, aceleration or position) , 
                     flags to know what alert states are active or if it detect player, radius(detection,attack,arrival), path, behaviour tree instance, perception aspects(field of view,distance to listen) and timers to
@@ -177,6 +191,10 @@ export default function TwoWonders() {
                 <div className ="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI Manager</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/managers/ia_manager.cpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>This manager is responsible for generating entity AIs using the data provided in a JSON file.First, it extracts information such us position, rotation, scale, type, combat characteristics and more. Then, create a specific behaviour tree for each enemy type, assign the necessary components and tags.
                 </p>
@@ -185,6 +203,10 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>AI System</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/ai_system.cpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>This system update the perception and behavior of enemy entities in the game, detecting the player and updating a shared "BlackBoard" with relevant information such as positions, life states and potential targets. Additionally, it runs behavior trees for each entity based on its state, provides data for visual debugging (such as vision cones), and ensures consistency by removing outdated information from non-relevant enemies.
                 </p>
@@ -193,6 +215,10 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Behaviour Trees</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/tree/main/src/utils/bt" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>Structure used in AI to model the behaviour of entities whose main function is organize and execute tasks or actions in a hierarchical and modular way.</p>
                 <p>At a tecnical level, behaviour tree class it's responsible for the creation of the nodes controlling and managing the reserved memory space, as well as, their correct execution and node class contains virtual run functions tha all nodes implement, differentes states that result from the execution and the context(references to components or managers). From the latter, the selector, sequence and decision node is created.</p>
@@ -205,6 +231,10 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Blackboard</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/utils/sngtn/blackboard.hpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>Is a shared data container to manage communication and coordination between different AIs.It is used by behaviour tree and updated by AI system.</p>
             </div>
@@ -212,6 +242,10 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Steering Behaviours</h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/tree/main/src/utils/sb" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>View Code here!</span>
+                    </a>
                 </div>
                 <p>These behaviors allow agents to move realistically through the environment, adjusting their direction and speed in real time based on their objectives and environmental conditions.</p>
                 <p>n Two Wonders I implement the following types of movement: Seek, Arrive, Flee, Pursue, Avoid, Evade and Flocking. All of these return a Steer_t structure, which contains information about the agent's speed, orientation, and whether it has arrived.</p>
@@ -220,6 +254,22 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Pathfinding </h3>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/tree/main/src/utils/pf" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>Class Graph and A*</span>
+                    </a>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/managers/map_manager.cpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>Generate Navmesh Method</span>
+                    </a>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/utils/sngtn/navmesh_info.hpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>NavMesh Data Signleton</span>
+                    </a>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/render_system.cpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>DrawTestPathfinding method</span>
+                    </a>
                 </div>
                 <p>It is a method used for agents to find the most optimal path between two points. In our case, we use it to make enemies move towards the player at long distances and so they can return to their patrol position after a chase.</p>
                 <p>To determine the navigable areas for the AIs, we have created a system of navigation meshes that are placed on the level model and through a script we obtain the vertices, centers and orthocenters for each one compiled in a json file. Then, our maps is responsible for importing all this information into a singleton called navmesh_info and creates the NavMesh entities that will be used for later debugging.</p>
@@ -233,6 +283,14 @@ export default function TwoWonders() {
                 <div className="tw-contrib-feature-title">
                     <img className="feature-icon" src="/assets/images/projects/TwoWonders/fijado_destellin.png" alt="icon" />
                     <h3>Sensorial Perception</h3>
+                     <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/utils/bt/decision_playerdetected.hpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>Detection Node</span>
+                    </a>
+                    <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/render_system.cpp" target="_blank" aria-label="View code on GitHub">
+                      <FaGithub />
+                      <span>DrawAlerts and DrawVisionCone methods</span>
+                    </a>
                 </div>
                 <p>Two Wonders uses a vision-based perception system that uses a cone as a field of vision which emerges from the head towards where the agent is facing and has a ray system for obstacle detection. In addition, it has perception by ear through alert radios that determine the volume of the sound that the agent can capture and the minimum time to detect you.</p>
                 <div className="tw-contrib-media">
@@ -246,9 +304,9 @@ export default function TwoWonders() {
             <p>
 
 Throughout the development, I created different interfaces to debug the AI, first using <a href='https://github.com/ocornut/imgui' target="_blank">ImGui</a> and later migrating this interface to our own OpenGL-based engine.</p>
-            <a className="tw-github-btn" href="#" aria-label="View code on GitHub">
+            <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/render_system.cpp" target="_blank" aria-label="View code on GitHub">
               <FaGithub />
-              <span>View Code here!</span>
+              <span>DrawDebuggerInGameIA and DrawEditorInGameIA methods</span>
             </a>
             <div className="tw-contrib-media">
               <img src="/assets/images/projects/TwoWonders/debuggerIA.png" alt="Tools screenshot" />
@@ -259,12 +317,31 @@ Throughout the development, I created different interfaces to debug the AI, firs
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> Skeletal Animation System </h3>
             <p>I collaborated in the implementation of the animation pipeline that uses <a href="https://github.com/assimp/assimp" target="_blank">Assimp</a> to import animation data and a custom runtime system to play and blend animations. At import time the engine converts each Assimp animation into an Animation object (with bones, keyframes, duration and ticks-per-second) and collects BoneInfo (name + offset matrix) to map model nodes to runtime bones. Animations are owned centrally (unique_ptrs) by the AnimationManager and referenced by components for efficient reuse.</p>
             <p>At runtime the AnimationManager updates active animations each frame by advancing animation time, traversing the node hierarchy, computing per-bone transforms, and writing final bone matrices used for GPU skinning. The system supports queued animations and smooth cross-fades: when transitioning it interpolates position, rotation (slerp) and scale between corresponding bone keyframes over a configurable transition time. This design separates import from playback, minimizes per-frame allocations, and provides robust blending for character animation.</p>
-             <div className="tw-contrib-media-column">
-              <a className="tw-github-btn" href="#" aria-label="View code on GitHub">
-                <FaGithub />
-                <span>View Code here!</span>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/motor/src/components/entity_model.hpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Entity Model</span>
               </a>
-            
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/motor/src/utils/bone.hpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Bone Class</span>
+              </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/motor/src/utils/animation.hpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Animation Class</span>
+              </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/motor/src/managers/animator_manager.hpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Animator Manager</span>
+              </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/animation_system.cpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Animation System</span>
+              </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/components/animation_component.hpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Animation Component</span>
+              </a>
+             <div className="tw-contrib-media-column">
               <iframe
                 src="https://www.youtube.com/embed/dVtGha5Plkw?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=dVtGha5Plkw"
                 title="Lady Umbrella - Short CutScenes"
@@ -280,11 +357,19 @@ Throughout the development, I created different interfaces to debug the AI, firs
             <p>The EventSystem simply calls EventManager::dispatchEvents each update.
 DispatchEvents method processes the queue in LIFO order, iterating listeners (entities with ListenerComponent) and, for each listener interested in the event code, executes a switch over EventCodes to perform game-specific reactions like spawning objects, adding text messages, playing sounds, teleporting NPCs, setting level flags, and scheduling further events.</p>
 <p>Listeners can also gain interest in newly scheduled events by adding codes to their ListenerComponent, and some event handlers push other events back onto the queue to form chains or multi-step triggers.</p>
-            <div className="tw-contrib-media-column">
-              <a className="tw-github-btn" href="#" aria-label="View code on GitHub">
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/managers/event_manager.hpp" target="_blank" aria-label="View code on GitHub">
                 <FaGithub />
-                <span>View Code here!</span>
+                <span>Event Manager</span>
               </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/systems/event_system.hpp" target="_blank" aria-label="View code on GitHub">
+                <FaGithub />
+                <span>Event System</span>
+              </a>
+              <a className="tw-github-btn" href="https://github.com/Josemaik/TwoWonders/blob/main/src/components/listener_component.hpp" target="_blank" aria-label="View code on GitHub">
+                <FaGithub />
+                <span>Listener Component</span>
+              </a>
+            <div className="tw-contrib-media-column">
                 <iframe
                 src="https://www.youtube.com/embed/7pjTfWEuw7M?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=7pjTfWEuw7M"
                 title="Lady Umbrella - Short CutScenes"

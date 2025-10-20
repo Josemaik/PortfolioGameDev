@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}  
+
 .lu-wrapper { background: #000000; color: #fff; min-height: 100vh; }
 
 /*Navbar override stylesheet*/
@@ -209,15 +213,136 @@
 .lu-details ol li { margin: 0.08rem 0; line-height: 1.25; }
 .lu-wrapper .footer-copy { color: #ffffff; }
 .lu-wrapper .footer-links a:hover { color: #5781b6; }
-/* Responsive */
+
+/* Tablet Layout */
+@media (max-width: 1340px) {
+  /* Summary section */
+  .lu-summary { padding: 1rem 6rem 8rem 5rem; }
+  .lu-summary-text { padding: 2rem; max-width: 100%; }
+
+  /* Iframe trailer */
+  .iframe-section { margin: 2rem 6rem; }
+  .iframe-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 0;
+  }
+
+  /* Contributions section */
+  .lu-contributions { padding: 0 2rem; }
+  .lu-contributions h2 { padding-left: 3rem; font-size: 2.5rem; }
+  .lu-contribution { padding: 1rem 3rem; }
+  .lu-contribution div img { max-width: 100%; margin: 2rem 0; }
+  .lu-contribution iframe { width: 300px; height: 200px; }
+
+  /* Behavior Trees cards */
+  .lu-bt-card { 
+    padding: 1rem 2rem 1rem 0;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .lu-bt-keyart { 
+    width: 240px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Grid media layout */
+  .lu-contrib-media {
+    gap: 0.75rem;
+  }
+  .lu-contrib-media img,
+  .lu-contrib-media iframe {
+    height: 200px;
+  }
+
+  /* Details section */
+  .lu-details { padding: 5rem 6rem; }
+}
+
+/* Mobile Layout */
 @media (max-width: 768px) {
   .lu-hero { height: 46vh; }
-  .lu-summary { flex-direction: column-reverse; }
+  .lu-logo { width: 280px; margin-top: 2rem; }
+  .lu-tagline { font-size: 1.1rem; text-align: center; padding: 0 1rem; }
+  .lu-socials { scale: 1.2; }
+
+  /* Summary section */
+  .lu-summary { 
+    padding: 1rem 2rem 6rem 2rem;
+    background-position: center bottom;
+  }
+  .lu-summary-text { padding: 1rem; }
   .lu-summary-image { width: 100%; }
+
+  /* Features list */
   .lu-features li { align-items: flex-start; gap: 0.5rem; }
   .feature-icon { width: 22px; height: 22px; }
-
-  /* stack Behaviour Trees cards on small screens */
-  .lu-bt-cards { flex-direction: column; }
-  .lu-bt-card { width: 100%; }
+  
+  /* Trailer section */
+  .iframe-section { margin: 1rem; }
+  
+  /* Contributions section */
+  .lu-contributions { padding: 0 2rem; }
+  .lu-contributions h2 { 
+    padding-left: 1rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .lu-contribution { 
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  .lu-contribution h3 { font-size: 1.3rem; }
+  .lu-contribution ul { padding-left: 1rem; }
+  
+  /* Behavior Trees cards */
+  .lu-bt-cards { 
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .lu-bt-card {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .lu-bt-keyart {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .lu-bt-links { align-items: center; }
+  
+  /* Grid media layout */
+  .lu-contrib-media {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .lu-contrib-media img,
+  .lu-contrib-media iframe,
+  .lu-contrib-media video {
+    height: auto;
+    max-height: 400px;
+    width: 100%;
+  }
+  
+  /* Details section */
+  .lu-details {
+    padding: 3rem 2rem;
+    background-position: center;
+  }
+  
+  /* Divider */
+  .lu-divider {
+    margin: 1.5rem auto;
+    background-size: 150px auto;
+  }
+  
+  /* Buttons */
+  .lu-github-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

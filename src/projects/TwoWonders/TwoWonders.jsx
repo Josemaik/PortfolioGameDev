@@ -144,7 +144,9 @@ export default function TwoWonders() {
               <span>Facade Engine</span>
             </a>
             <div className="tw-contrib-media">
-              <img src="/assets/images/projects/TwoWonders/ECS-diagram.png" alt="Systems screenshot" />
+              <a href="/assets/images/projects/TwoWonders/ECS-diagram.png" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/projects/TwoWonders/ECS-diagram.png" alt="Systems screenshot" />
+              </a>
             </div>
           </article>
 
@@ -171,7 +173,9 @@ export default function TwoWonders() {
             <h3><img className="contrib-icon" src="/assets/images/projects/TwoWonders/fijado_trama.gif" alt="icon"/> AI Engine </h3>
             <p>I developed an AI engine from scratch in c++ which would be in charge of processing different entities such as enemies or npcs and giving them behaviors according to their previous design.</p>
             <div className="tw-contrib-media">
-              <img src="/assets/images/projects/TwoWonders/AIEngine_diagram.png" alt="Tools screenshot" />
+              <a href="/assets/images/projects/TwoWonders/AIEngine_diagram.png" target="_blank" rel="noopener noreferrer">
+                <img src="/assets/images/projects/TwoWonders/AIEngine_diagram.png" alt="Tools screenshot" />
+              </a>
             </div>
             <div className="tw-contrib-feature">
                 <div className="tw-contrib-feature-title">

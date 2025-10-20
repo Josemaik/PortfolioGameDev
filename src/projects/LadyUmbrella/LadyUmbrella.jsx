@@ -22,7 +22,6 @@ export default function LadyUmbrella() {
       <header className="lu-hero">
         <div className="lu-hero-video-wrapper">
           <iframe
-            className="tw-hero-video"
             src="https://www.youtube.com/embed/1y_tEK_6Vso?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=1y_tEK_6Vso"
             title="Lady Umbrella - Short CutScenes"
             frameBorder="0"

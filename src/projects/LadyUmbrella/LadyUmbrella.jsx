@@ -26,7 +26,6 @@ export default function LadyUmbrella() {
             title="Lady Umbrella - Short CutScenes"
             frameBorder="0"
             allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
             />
         </div>
         <div className="lu-hero-overlay">
@@ -89,7 +88,6 @@ export default function LadyUmbrella() {
               title="Lady Umbrella Trailer"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
               />
             </div>
         </section>
@@ -109,7 +107,7 @@ export default function LadyUmbrella() {
                   <li>Set activation logic through wave systems, trigger events or reinforcements</li>
                   <li>Adjust spawn order for testing purposes</li>
                 </ul>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Managers/AISpawnPoint.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>Spawn Point Class here!</span>
                 </a>
@@ -124,7 +122,7 @@ export default function LadyUmbrella() {
                   <li><strong>Enter Arena Event:</strong> Launch all linked spawners to the current event</li>
                 </ul>
                 <p>And also, can be used to set <strong>Combat Zone number</strong> to all covers and spawners overlaping with it, used later for IA logic.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Triggers/TriggerBoxArena.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>TriggerBoxArena Class here!</span>
                 </a>
@@ -136,19 +134,21 @@ export default function LadyUmbrella() {
                   title="Lady Umbrella - Short CutScenes"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                  />
-
                   <p>Arena Builder also serves as an <strong>In-game Manager</strong>, orchestrating the runtime behavior of each encounter.
                   In order to have a modular, maintable and readable class, logic is delegated in different components. </p>
+                  <a className="lu-github-btn" href="http://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Managers/ArenaManager.cpp" target="_blank" aria-label="View code on GitHub">
+                    <FaGithub />
+                    <span>Arena Manager here!</span>
+                  </a>  
                   <h3>Enemy Spawner Component</h3>
                   <p>Responsible for managing all spawning logic in a combat arena. It organizes spawn points into waves, reinforcements groups ans special events. Tracks the progression throught waves, spawn timing and whether enemies spawn in order or randomly.
                     Overall. it serves as a centralized controller for when, where and how enemies appear during encounters.
                   </p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
-                  <FaGithub />
-                  <span>View Code here!</span>
-                </a>
+                  <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Components/EnemySpawnerComponent.cpp" target="_blank" aria-label="View code on GitHub">
+                    <FaGithub />
+                    <span>Enemy Spawner here!</span>
+                  </a>
                 <div>
                   <img src="/assets/images/projects/LadyUmbrella/Systems/EnemySpawnerComponent.png" alt="Spawn Point Instance" />
                 </div>
@@ -159,9 +159,9 @@ export default function LadyUmbrella() {
                     these tokens among active enemies and adjust token availability based on combat progress like player kills. It essence, acts as
                     AI director to create more strategic and believable combat encounters.
                   </p>
-                  <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                  <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Components/EnemyCoordinationComponent.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Enemy Coordination here!</span>
                 </a>
                 <div className="lu-contrib-media">
                   <img src="/assets/images/projects/LadyUmbrella/Systems/EnemyCoordinationComponent0.png" alt="Spawn Point Instance" />
@@ -174,9 +174,9 @@ export default function LadyUmbrella() {
                    state of enemies and covers per zone. This allows AI system to understand batlelfield distribution such as crowded zones to let tenemies know where can
                    reposition or flee.
                   </p>
-                   <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                   <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Components/EnemyZonesComponent.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Enemy Zones here!</span>
                 </a>
                 <div className="lu-contrib-media">
                   <img src="/assets/images/projects/LadyUmbrella/Systems/EnemyZonesComponentEditor.png" alt="Spawn Point Instance"/>
@@ -200,9 +200,13 @@ export default function LadyUmbrella() {
             <article className="lu-contribution">
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Class architecture </h3>
                 <p>A class architecture based on interfaces and inheritance has been followed for <strong>Characters, Controllers and Weapons.</strong></p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/Characters/Enemies" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Enemies</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/Weapons" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Weapons</span>
                 </a>
                 <div className="lu-contrib-media">
                   <a href="/assets/images/projects/LadyUmbrella/Systems/DiagramaClasesEnemyControllers.png" target="_blank">
@@ -239,7 +243,7 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                           <TfiBlackboard />
                           <span>Watch Blackboard</span>
                       </a>
-                      <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                      <a className="lu-github-btn-card" href="https://www.notion.so/AI-MAFIA-293e285cee4981dfaa9ee4840f52731d?source=copy_link" target="_blank" aria-label="View code on GitHub">
                           <FaDochub />
                           <span>Mafia GDD</span>
                       </a>
@@ -262,7 +266,11 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                           <TfiBlackboard />
                           <span>Watch Blackboard</span>
                       </a>
-                      <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                      <a className="lu-github-btn-card" href="https://www.notion.so/AI-AGENCY-293e285cee4981a9af37ce5d61c811fc?source=copy_lin" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                          <FaDochub />
+                          <span>Agency GDD</span>
+                      </a>
+                      <a className="lu-github-btn-card" href="https://www.notion.so/Agency-Roles-293e285cee4980e19749f3c3f38388d2?source=copy_link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                           <FaDochub />
                           <span>Agency GDD</span>
                       </a>
@@ -272,11 +280,11 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                 <div className="lu-bt-card">
                   <h4>Custom Task and Services in C++:</h4>
                   <div className="lu-links">
-                    <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                    <a className="lu-github-btn-card" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/AI/BTTasks" target="_blank" aria-label="View code on GitHub">
                       <FaGithub />
                       <span>BT Tasks code here!</span>
                     </a>
-                    <a className="lu-github-btn-card" href="#" aria-label="View code on GitHub">
+                    <a className="lu-github-btn-card" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/AI/BTServices" target="_blank" aria-label="View code on GitHub">
                       <FaGithub />
                       <span>BT Services code here!</span>
                     </a>
@@ -293,11 +301,11 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Test/EQT_FilterCoversAlreadySelected.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryTest: Filter Covers already selected</span>
                 </a>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Test/EQT_FilterCoversInsideZone.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryTest: Filter Covers inside Zone</span>
                 </a>
@@ -306,7 +314,6 @@ These are activated based on Blackboard conditions or Selector priorities.</li>
                   title="Lady Umbrella - Short CutScenes"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                  />
                 <h3>Close Combat Movement</h3>
                 <p>Utilized a Circle Points Generator around the player to define potential movement targets during close-range engagements.
@@ -315,7 +322,7 @@ Applied distance, dot product, and path existence tests to ensure the chosen pos
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Context/EQC_Player.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryContext: Player</span>
                 </a>
@@ -324,7 +331,6 @@ Applied distance, dot product, and path existence tests to ensure the chosen pos
                   title="Lady Umbrella - Short CutScenes"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                  />
                 <h3>Line of Sight Search</h3>
                 <p>Used a Grid Generator to sample potential points from which the AI could gain visual contact with the player.
@@ -333,7 +339,7 @@ The selection process involved trace, distance, and dot product tests to ensure 
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Context/EQC_QuerierActor.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryContext: Owner Pawn</span>
                 </a>
@@ -342,7 +348,6 @@ The selection process involved trace, distance, and dot product tests to ensure 
                   title="Lady Umbrella - Short CutScenes"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                  />
                 <h3>Flank Path Calculation</h3>
                 <p>Built using an Actor Generator referencing CoverEntryPoint actors. Central positions were filtered out via a TriggerVolume filter, isolating lateral points suitable for flanking.
@@ -351,11 +356,11 @@ Additional dot product and distance tests were used to refine the selection, ens
                   <FaEye />
                   <span>Watch EQS Diagram</span>
                 </a>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Context/EQC_TriggerVolume.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryContext: TriggerVolume</span>
                 </a>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/EQS/Test/EQT_FilterCoversInFlankPath.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>EnvQueryTest: Filter covers in flank path</span>
                 </a>
@@ -364,7 +369,6 @@ Additional dot product and distance tests were used to refine the selection, ens
                   title="Lady Umbrella - Short CutScenes"
                   frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
                  />
             </article>
 
@@ -373,24 +377,26 @@ Additional dot product and distance tests were used to refine the selection, ens
                 <p>In some of our game’s arenas, enemies were visibly popping in (spawning in plain sight of the player), which felt unnatural and broke immersion.</p>
                 <p>To address this, we implemented a <strong>door- and window-based arena entry system.</strong> Instead of appearing abruptly, enemies now enter the arena through visible entry points such as doors and windows.
 This approach makes encounters feel more <strong>dynamic, believable, and immersive,</strong> as players can see enemies emerging naturally from the environment before engaging in combat.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Triggers/TriggerArenaDoor.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>Door and Window Class</span>
+                  <span>Door Class</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Triggers/TriggerArenaWindow.cpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Window Class</span>
                 </a>
                 <div className="lu-contrib-media">
                   <iframe
                     src="https://www.youtube.com/embed/ycLtgsO1DT8?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=ycLtgsO1DT8"
                     title="LadyUmbrella - Door Arena Entry System"
                     frameBorder="0"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
+                    fullscreenallow="autoplay; ; picture-in-picture"
                  />
                   <iframe
                     src="https://www.youtube.com/embed/u5nL_m9nEgo?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=u5nL_m9nEgo"
                     title="LadyUmbrella - Door Arena Entry System"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
                  />
                 </div>
             </article>
@@ -400,9 +406,13 @@ This approach makes encounters feel more <strong>dynamic, believable, and immers
                 <h3><img className="contrib-icon" src="/assets/images/projects/LadyUmbrella/T_UI_UmbrellaLoadingFused.png" alt="icon"/> Gadgets Enemy Reactions </h3>
                 <p>Francesca’s umbrella is equipped with several <strong>unique gadgets</strong> that make it special. One of them is a <strong>Retractable Hook</strong> that can be fired from the umbrella and used for solving puzzles or for traversal purposes. In this case, I was responsible for implementing its interaction with enemies.</p>
                 <p>The umbrella’s hook can be fired to <strong>grab enemies and pull them toward the player close range—ideal</strong> for follow-up attacks while being stunned for a short duration before returning to normal behavior. If an enemy is pulled from a higher place, they’ll fall forward and die upon hitting the ground.</p>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/Components/GadgetsReactionComponent" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Gadget Reaction Component</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/Weapons/Umbrella" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>Umbrella</span>
                 </a>
                 <div className="lu-contrib-media">
                    <iframe
@@ -410,21 +420,19 @@ This approach makes encounters feel more <strong>dynamic, believable, and immers
                     title="LadyUmbrella - Door Arena Entry System"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
                  />
                  <iframe
                     src="https://www.youtube.com/embed/CiKIJiGfW64?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=CiKIJiGfW64"
                     title="LadyUmbrella - Door Arena Entry System"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
                  />
                 </div>
                 <p>Francesca’s umbrella also includes an <strong>Electric Dart Gadget.</strong>
 The electric dart is a <strong>high-speed projectile that shocks enemies</strong>, stunning them for an extended period. The electric effect also chains between nearby enemies, making it effective against groups.</p>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Characters/Enemies/EnemyCharacter.cpp" aria-label="View code on GitHub">
                   <FaGithub />
-                  <span>View Code here!</span>
+                  <span>Enemy Class</span>
                 </a>
                 <div className="lu-contrib-media">
                   <iframe
@@ -432,7 +440,6 @@ The electric dart is a <strong>high-speed projectile that shocks enemies</strong
                     title="LadyUmbrella - Door Arena Entry System"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
                  />
                 </div>
             </article>
@@ -446,9 +453,13 @@ The electric dart is a <strong>high-speed projectile that shocks enemies</strong
                   <li><strong>Store index ranges for each State</strong> so it knows which lines belong to which state</li>
                   <li><strong>Handle playback logic depending on context</strong> ( Cinematic, In-game cinematic or Combat)</li>
                 </ul>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/VoiceLineComponent/VoiceLineComponent.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>Voice Line Component</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/FModComponentInterface.cpp" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>FMOD Component</span>
                 </a>
                  <div className="lu-contrib-media">
                   <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineComponent.png" alt="Spawn Point Instance"/>
@@ -463,7 +474,7 @@ When triggered, it performs several actions:</p>
                   <li>Activates the “Skip” button in the UI so the player can skip the scene if desired.</li>
                   <li>Optionally unlocks new gadgets or abilities after the cinematic finishes.</li>
                 </ul>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Environment/TriggerGadgets" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>TriggerBoxGadgets</span>
                 </a>
@@ -474,7 +485,6 @@ When triggered, it performs several actions:</p>
                     title="Lady Umbrella Trailer"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
                   />
                 </div>
                   <p>
@@ -504,7 +514,7 @@ When triggered, it performs several actions:</p>
                   <li><strong>Spawning:</strong> If necessary, it spawns secondary characters ( Marco, Vincenzo or Agency)</li>
                   <li><strong>PlayBack loop:</strong> Starts dialogue of current actor, waits for voice duration then calls next line</li>
                 </ul>
-                <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/tree/main/Source/LadyUmbrella/Environment/TriggerCinematic" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>TriggerCinematic</span>
                 </a>
@@ -515,7 +525,6 @@ When triggered, it performs several actions:</p>
                     title="In-Game Cinematic System – Dynamic Dialogue Trigger (Unreal Engine)"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     frameBorder="0"
-                    allowFullScreen
                   />
                 </div>
                  <h3>Combat Voice Lines - VoiceLineManager</h3>
@@ -529,9 +538,21 @@ When triggered, it performs several actions:</p>
                   <li>Manager periodically procces voice lines queue removing expired request and choosing what to play.</li>
                  </ul>
                  <p>This ensures that even with many characters trying to speak at once, only one voice line plays at a time.</p>
-                 <a className="lu-github-btn" href="#" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/VoiceLineComponent/VoiceLineManager.cpp" target="_blank" aria-label="View code on GitHub">
                   <FaGithub />
                   <span>VoiceLineManager</span>
+                </a>
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/VoiceLineComponent/VoiceLineDTO.h" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>VoiceLineDTO</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/VoiceLineComponent/VoiceLineActor.h" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>VoiceLineActor</span>
+                </a>
+                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/Components/VoiceLineComponent/VoiceLineState.h" target="_blank" aria-label="View code on GitHub">
+                  <FaGithub />
+                  <span>VoiceLineState</span>
                 </a>
                  <div className="lu-contrib-media">
                   <iframe
@@ -539,9 +560,11 @@ When triggered, it performs several actions:</p>
                     title="Lady Umbrella Trailer"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
                   />
-                  <img src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineSystemDiagram.png" alt="Spawn Point Instance"/>
+                  <a href="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineSystemDiagram.png" target="_blank">
+                    <img className='image-zoom' src="/assets/images/projects/LadyUmbrella/Systems/VoiceLines/VoiceLineSystemDiagram.png" alt="Voice Line Diagram"/>
+                  </a>  
+                  
                 </div>
             </article>
         </section>

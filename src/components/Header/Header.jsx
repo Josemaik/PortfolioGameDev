@@ -5,13 +5,29 @@ import { useState } from 'react'
 const brandLogo = "/assets/brand/brand-logo.gif"
 const brandLogoBlue = "/assets/brand/brand_logo_blue.gif"
 const brandLogoPurple = "/assets/brand/brand_logo_purple.gif"
+const brandLogoBlack = "/assets/brand/brand_logo_black.gif"
 
 const Header = ({ onHomeClick, onNavigate }) => {
   const [open, setOpen] = useState(false)
   const isProject = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects');
-  const isTwoWonders = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects/two-wonders');
-  const brandlogochoose = isProject ? (isTwoWonders ? brandLogoPurple : brandLogoBlue) : brandLogo;
-  const HeaderClassName = isProject ? (isTwoWonders ? 'header--two-wonders' : 'header--lday-umbrella') : '';
+const isTwoWonders = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects/two-wonders');
+const isCodZombies = typeof window !== 'undefined' && window.location.pathname.startsWith('/projects/cod-zombies-prototype');
+
+const brandlogochoose = isProject 
+  ? isTwoWonders 
+    ? brandLogoPurple 
+    : isCodZombies 
+      ? brandLogoBlack 
+      : brandLogoBlue 
+  : brandLogo;
+
+const HeaderClassName = isProject 
+  ? isTwoWonders 
+    ? 'header--two-wonders' 
+    : isCodZombies 
+      ? 'header--cod-zombies' 
+      : 'header--lday-umbrella' 
+  : '';
   return (
     <header className={`header ${HeaderClassName}`}>
       <div className="brand">

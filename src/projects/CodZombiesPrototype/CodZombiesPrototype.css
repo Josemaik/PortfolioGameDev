@@ -2,7 +2,7 @@ body {
   overflow-x: hidden;
 }  
 
-.lu-wrapper { background: #000000; color: #fff; min-height: 100vh; }
+.cz-wrapper { background: #000000; color: #fff; min-height: 100vh; }
 
 /*Navbar override stylesheet*/
 .header--cod-zombies { background-color: rgb(224, 123, 15);}
@@ -19,13 +19,13 @@ body {
   background: #000000;
 }
 /*Social links override*/
-.lu-wrapper .social-icon:hover {
+.cz-wrapper .social-icon:hover {
   color: rgb(224, 123, 15);
 }
-.lu-wrapper .social-icon::after{border-left: 8px solid #ffffff;}
+.cz-wrapper .social-icon::after{border-left: 8px solid #ffffff;}
 
-.lu-hero { position: relative;width: 100vw;  height: 60vh; overflow: hidden; }
-.lu-hero-video-wrapper {
+.cz-hero { position: relative;width: 100vw;  height: 60vh; overflow: hidden; }
+.cz-hero-video-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -34,7 +34,7 @@ body {
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
-.lu-hero-video { 
+.cz-hero-video { 
   position: absolute;
   inset: 0;
   width: 100%;
@@ -42,11 +42,11 @@ body {
   object-fit: cover;
   opacity: 0.45;
 }
-.lu-hero-overlay { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.5rem; }
-.lu-logo { width: 350px; max-width: 70%; height: auto; display: block; margin-top: 3rem;}
-.lu-tagline { color: rgb(255, 255, 255); opacity: 0.95; margin: 0.25rem 0 0.75rem; font-size: 1.3rem}
-.lu-socials { scale: 1.5; display: flex; gap: 0.75rem; }
-.lu-social-link { 
+.cz-hero-overlay { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 1.5rem; }
+.cz-logo { width: 350px; max-width: 70%; height: auto; display: block; margin-top: 3rem;}
+.cz-tagline { color: rgb(255, 255, 255); opacity: 0.95; margin: 0.25rem 0 0.75rem; font-size: 1.3rem}
+.cz-socials { scale: 1.5; display: flex; gap: 0.75rem; }
+.cz-social-link { 
     display: inline-flex; 
     align-items: center; 
     justify-content: center; 
@@ -55,21 +55,21 @@ body {
      color: #fff; text-decoration:
       none; 
 }
-.lu-social-link:hover { background: rgb(224, 123, 15); color: #f4f4f4; transition: all 0.2s ease;  transform: scale(1.2); }
+.cz-social-link:hover { background: rgb(224, 123, 15); color: #f4f4f4; transition: all 0.2s ease;  transform: scale(1.2); }
 
-.lu-main { width: 100%; margin: 0rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #000000;}
-.lu-summary { background-image: url('/assets/images/projects/CodZombiesPrototype/Splash.png'); background-size: cover; background-position: center; padding: 1rem 12rem 10rem 10rem; border-radius: 0px; }
-.lu-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 70rem; color: #ffffff; background-color: #000000; opacity: 0.7;}
+.cz-main { width: 100%; margin: 0rem auto; padding: 0 0rem; display: flex; flex-direction: column; gap: 2rem; background-color: #000000;}
+.cz-summary { background-image: url('/assets/images/projects/CodZombiesPrototype/Splash.png'); background-size: cover; background-position: center; padding: 1rem 12rem 10rem 10rem; border-radius: 0px; }
+.cz-summary-text { flex: 1; padding: 3rem; border-radius: 0px; max-width: 70rem; color: #ffffff; background-color: #000000; opacity: 0.7;}
 /* .lu-summary-image { width: 320px; flex-shrink: 0; } */
-.lu-summary-text p {padding: 1rem 0rem;}
-.lu-summary-image img { width: 100%; border-radius: 8px; object-fit: cover; }
+.cz-summary-text p {padding: 1rem 0rem;}
+.cz-summary-image img { width: 100%; border-radius: 8px; object-fit: cover; }
 .feature-icon { width: 28px; height: 28px; vertical-align: middle; margin-right: 0.6rem; flex-shrink: 0; }
 
-.lu-features { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
-.lu-features li { display: flex; align-items: center; gap: 0.75rem; }
-.lu-features li p { margin: 0; color: #fff; font-size: 1rem; }
+.cz-features { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; }
+.cz-features li { display: flex; align-items: center; gap: 0.75rem; }
+.cz-features li p { margin: 0; color: #fff; font-size: 1rem; }
 
-.lu-role-box {
+.cz-role-box {
   margin-top: 1rem;
   background: rgba(255,255,255,0.2);
   border-left: 4px solid #ffffff;
@@ -77,13 +77,13 @@ body {
   border-radius: 6px;
   max-width: 48rem;
 }
-.lu-role-box strong { display: block; color: #fff; margin-bottom: 0.25rem; }
-.lu-role-box p { margin: 0; color: #e9f7ef; }
+.cz-role-box strong { display: block; color: #fff; margin-bottom: 0.25rem; }
+.cz-role-box p { margin: 0; color: #e9f7ef; }
 
-.iframe-section{
+.cz-iframe-section{
   margin: 2rem 13rem;
 }
-.iframe-container {
+.cz-iframe-container {
     position: relative;
     padding: 2rem 2rem;
     overflow: hidden;
@@ -96,7 +96,7 @@ body {
     border-radius: 15px;
 }
 
-.iframe-container iframe { 
+.cz-iframe-container iframe { 
   position: absolute; 
   top: 0; 
   left: 0; 
@@ -106,238 +106,59 @@ body {
   padding: 1rem;
 }
 
-.lu-contributions { display: grid; gap: 1.25rem; padding: 0 3rem;}
-.lu-contributions h2 { margin-top: 2rem; padding-left: 7rem; font-size: 3rem;}
-.lu-contribution { background: #5781b6; padding: 1rem 7rem; border-radius: 8px; }
-.lu-contribution h3 {font-size: 1.5rem}
-.lu-contribution p{margin: 1rem 0rem;}
-.lu-contribution ul { padding-left: 1.5rem; }
-.lu-contribution div img {max-width: 1200px; margin: 3rem 0rem;}
-.lu-contribution iframe{width: 1200px; height: 650px; max-width: 1200px; border-radius: 6px; margin: 0 auto;}
-.contrib-icon { width: 48px; height: 48px; vertical-align: middle; margin-right: 0.6rem; }
-.lu-github-btn { margin: 1rem 1rem;}
 
-.lu-links {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0rem;
-}
-
-/* Behaviour Trees cards */
-.lu-bt-cards {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0 2rem 0;
-}
-
-.lu-bt-card {
-  display: flex;
-  align-items: center;
-  background: #254a7a; /* darker blue */
-  border-radius: 16px;
-  padding: 1rem 5rem 1rem 0rem;
-  min-height: 120px;
-  max-width: fit-content;
-}
-
-.lu-bt-card h4 { padding: 1rem;}
-.lu-bt-card a { display: inline-flex; align-items: center; gap: 0.5rem; background: #5781b6; color: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 600;}
-.lu-bt-card a:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35);}
-.lu-bt-keyart { width:310px; height: 260px;}
-
-.lu-bt-links { display: flex; flex-direction: column; gap: 1rem; }
-
-.lu-contrib-media { 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);        
-  gap: 1rem;
-  max-width: 1500px;  
-  width: 100%;   
-  align-items: center;      
-}
-
-.lu-contrib-media img {
-  width: 100%;
-  height: 500px;
-  max-height: 1000px;                   
-  border-radius: 6px;
-}
-.lu-contrib-media video {
-  width: 100%;
-  height: auto;                   
-  border-radius: 6px;
-}
-.lu-contrib-media iframe{
-  width: 100%;
-  height: 500px;
-  max-height: 1000px;                   
-  border-radius: 6px;
-}
-
-.image-zoom {
-  height: 1000px;
-  transition: transform 0.3s ease; /* suaviza el zoom */
-}
-.image-zoom:hover {
-   transform: scale(1.1); /* aumenta el tamaño al 105% */
-}
-
-.lu-contrib-divider { width: 100%; max-width: 560px; max-height: 70px; opacity: 0.9; margin: 0.6rem 0; mask-repeat: space;}
-.lu-divider {
-  max-width: 1700px;
-  height: 50px;
-  margin: 2rem  5rem auto;
-  background-image: url('/assets/images/projects/LadyUmbrella/T_UI_UmbrellaClosed.png');
-  background-repeat: space;
-  background-position: center top;
-  background-size: 200px auto;
-  opacity: 0.9;
-  pointer-events: none;
-}
-.lu-github { display: inline-block; margin-top: 0.75rem; color: #00fc47; }
-
-.lu-github-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: #0c2c54; color: #fff; padding: 0.5rem 0.75rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
-.lu-github-btn svg { width: 18px; height: 18px; }
-.lu-github-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.35);}
-
-.lu-details { background-image: url('/assets/images/projects/CodZombiesPrototype/bannerZombies.png'); background-size: cover; background-position: center; padding: 7rem 13rem;}
-.lu-details ul { padding: 0; margin: 0;}
-.lu-details ul { list-style: none; padding: 1rem 0rem; margin: 0; display: grid; gap: 0.5rem; color: #fff; }
-.lu-details ol { padding-left: 2rem; }
-.lu-details ol li { margin: 0.08rem 0; line-height: 1.25; }
-.lu-wrapper .footer-copy { color: #ffffff; }
-.lu-wrapper .footer-links a:hover { color: rgb(224, 123, 15); }
+.cz-details { background-image: url('/assets/images/projects/CodZombiesPrototype/bannerZombies.png'); background-size: cover; background-position: center; padding: 7rem 13rem;}
+.cz-details ul { padding: 0; margin: 0;}
+.cz-details ul { list-style: none; padding: 1rem 0rem; margin: 0; display: grid; gap: 0.5rem; color: #fff; }
+.cz-details ol { padding-left: 2rem; }
+.cz-details ol li { margin: 0.08rem 0; line-height: 1.25; }
+.cz-wrapper .footer-copy { color: #ffffff; }
+.cz-wrapper .footer-links a:hover { color: rgb(224, 123, 15); }
 
 /* Tablet Layout */
 @media (max-width: 1340px) {
   /* Summary section */
-  .lu-summary { padding: 1rem 6rem 8rem 5rem; }
-  .lu-summary-text { padding: 2rem; max-width: 100%; }
+  .cz-summary { padding: 1rem 6rem 8rem 5rem; }
+  .cz-summary-text { padding: 2rem; max-width: 100%; }
 
   /* Iframe trailer */
-  .iframe-section { margin: 2rem 6rem; }
-  .iframe-container {
+  .cz-iframe-section { margin: 2rem 6rem; }
+  .cz-iframe-container {
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     padding-top: 0;
   }
 
-  /* Contributions section */
-  .lu-contributions { padding: 0 2rem; }
-  .lu-contributions h2 { padding-left: 3rem; font-size: 2.5rem; }
-  .lu-contribution { padding: 1rem 3rem; }
-  .lu-contribution div img { max-width: 100%; margin: 2rem 0; }
-  .lu-contribution iframe { width: 300px; height: 200px; }
-
-  /* Behavior Trees cards */
-  .lu-bt-card { 
-    padding: 1rem 2rem 1rem 0;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .lu-bt-keyart { 
-    width: 240px;
-    height: 200px;
-    object-fit: cover;
-  }
-
-  /* Grid media layout */
-  .lu-contrib-media {
-    gap: 0.75rem;
-  }
-  .lu-contrib-media img,
-  .lu-contrib-media iframe {
-    height: 200px;
-  }
-
   /* Details section */
-  .lu-details { padding: 5rem 6rem; }
+  .cz-details { padding: 5rem 6rem; }
 }
 
 /* Mobile Layout */
 @media (max-width: 768px) {
-  .lu-hero { height: 46vh; }
-  .lu-logo { width: 280px; margin-top: 2rem; }
-  .lu-tagline { font-size: 1.1rem; text-align: center; padding: 0 1rem; }
-  .lu-socials { scale: 1.2; }
+  .cz-hero { height: 46vh; }
+  .cz-logo { width: 280px; margin-top: 2rem; }
+  .cz-tagline { font-size: 1.1rem; text-align: center; padding: 0 1rem; }
+  .cz-socials { scale: 1.2; }
 
   /* Summary section */
-  .lu-summary { 
+  .cz-summary { 
     padding: 1rem 2rem 6rem 2rem;
     background-position: center bottom;
   }
-  .lu-summary-text { padding: 1rem; }
-  .lu-summary-image { width: 100%; }
+  .cz-summary-text { padding: 1rem; }
+  .cz-summary-image { width: 100%; }
 
   /* Features list */
-  .lu-features li { align-items: flex-start; gap: 0.5rem; }
+  .cz-features li { align-items: flex-start; gap: 0.5rem; }
   .feature-icon { width: 22px; height: 22px; }
   
   /* Trailer section */
-  .iframe-section { margin: 1rem; }
-  
-  /* Contributions section */
-  .lu-contributions { padding: 0 2rem; }
-  .lu-contributions h2 { 
-    padding-left: 1rem;
-    font-size: 2rem;
-    text-align: center;
-  }
-  .lu-contribution { 
-    padding: 1rem;
-    border-radius: 6px;
-  }
-  .lu-contribution h3 { font-size: 1.3rem; }
-  .lu-contribution ul { padding-left: 1rem; }
-  
-  /* Behavior Trees cards */
-  .lu-bt-cards { 
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  .lu-bt-card {
-    padding: 1rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .lu-bt-keyart {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  .lu-bt-links { align-items: center; }
-  
-  /* Grid media layout */
-  .lu-contrib-media {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .lu-contrib-media img,
-  .lu-contrib-media iframe,
-  .lu-contrib-media video {
-    height: auto;
-    max-height: 400px;
-    width: 100%;
-    padding-left: 2rem;
-  }
+  .cz-iframe-section { margin: 1rem; }
   
   /* Details section */
-  .lu-details {
+  .cz-details {
     padding: 3rem 2rem;
     background-position: center;
-  }
-  
-  /* Divider */
-  .lu-divider {
-    margin: 1.5rem auto;
-    background-size: 150px auto;
-  }
-  
-  /* Buttons */
-  .lu-github-btn {
-    width: 100%;
-    justify-content: center;
   }
 }

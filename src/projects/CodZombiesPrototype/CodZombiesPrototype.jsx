@@ -14,12 +14,12 @@ const socials = [
 
 export default function LadyUmbrella() {
   return (
-    <div className="lu-wrapper">
+    <div className="cz-wrapper">
         <SocialLinks />
-      <header className="lu-hero">
-        <div className="lu-hero-video-wrapper">
+      <header className="cz-hero">
+        <div className="cz-hero-video-wrapper">
           <iframe
-            className="lu-hero-video"
+            className="cz-hero-video"
             src="https://www.youtube.com/embed/9u2b9uudlmQ?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&rel=0&loop=1&playlist=9u2b9uudlmQ"
             title="Lady Umbrella - Short CutScenes"
             frameBorder="0"
@@ -27,14 +27,14 @@ export default function LadyUmbrella() {
             allowFullScreen
             />
         </div>
-        <div className="lu-hero-overlay">
+        <div className="cz-hero-overlay">
           <img src="/assets/images/projects/CodZombiesPrototype/Cod_zombies.png" alt="Lady Umbrella Logo" className="lu-logo" />
-          <p className="lu-tagline"><strong>Fan prototype -  Cod Zombies</strong></p>
-          <div className="lu-socials">
+          <p className="cz-tagline"><strong>Fan prototype -  Cod Zombies</strong></p>
+          <div className="cz-socials">
             {socials.map((s, i) => {
               const Icon = s.icon;
               return (
-                <a key={i} href={s.href} aria-label={s.label} target="_blank" rel="noreferrer" className="lu-social-link">
+                <a key={i} href={s.href} aria-label={s.label} target="_blank" rel="noreferrer" className="cz-social-link">
                   <Icon />
                 </a>
               );
@@ -43,15 +43,15 @@ export default function LadyUmbrella() {
         </div>
       </header>
 
-      <main className="lu-main">
-        <section className="lu-summary">
-          <div className="lu-summary-text">
+      <main className="cz-main">
+        <section className="cz-summary">
+          <div className="cz-summary-text">
             <h1>Overview</h1>
             <p>
               Fan Prototype of <b>Cod Zombies</b> made with Unreal engine 5.4 from scratch in full Blueprint.
             </p>
             <h1>Features</h1>
-            <ul className="lu-features">
+            <ul className="cz-features">
               <li>
                 <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />
                 <p>Movement and Animations</p>
@@ -80,8 +80,8 @@ export default function LadyUmbrella() {
           </div>
         </section>
 
-        <section className="iframe-section">
-            <div className="iframe-container">
+        <section className="cz-iframe-section">
+            <div className="cz-iframe-container">
               <iframe
               src="https://www.youtube.com/embed/9u2b9uudlmQ"
               title="Lady Umbrella Trailer"
@@ -90,14 +90,8 @@ export default function LadyUmbrella() {
               />
             </div>
         </section>
-        
 
-        <section className="lu-contributions">
-            
-            
-        </section>
-
-        <section className="lu-details">
+        <section className="cz-details">
             <h2>Project Details</h2>
             <ul>
             <li><b>Studio:</b> Personal Project</li>

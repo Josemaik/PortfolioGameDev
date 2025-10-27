@@ -149,17 +149,21 @@ body {
 
 .lu-contrib-media { 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);        
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  max-width: 1500px;  
-  width: 100%;   
+  /* Expand the media block to compensate the parent .lu-contribution horizontal padding
+     so images visually reach the contribution edges. Parent uses padding: 1rem 7rem; */
+  width: calc(100% + 14rem);
+  margin: 0 -7rem;
+  max-width: none;  
   align-items: center;      
 }
 
 .lu-contrib-media img {
   width: 100%;
-  height: 500px;
-  max-height: 1000px;                   
+  height: auto; /* keep natural aspect and avoid vertical stretching */
+  min-height: 320px; /* ensure a comfortable visual height on desktop */
+  object-fit: cover; /* crop to fill the box while keeping aspect */
   border-radius: 6px;
 }
 .lu-contrib-media video {
@@ -320,7 +324,7 @@ body {
     height: auto;
     max-height: 400px;
     width: 100%;
-    padding-left: 2rem;
+    padding-left: 0; /* ensure full-width on mobile */
   }
   
   /* Details section */

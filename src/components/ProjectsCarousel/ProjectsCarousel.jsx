@@ -4,7 +4,7 @@ import { RiTeamFill } from "react-icons/ri";
 
 const projects = [
   {
-    title: 'Lady Umnbrella',
+    title: 'Lady Umbrella',
     studio: 'Zulo Interactive',
     image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
     description: (

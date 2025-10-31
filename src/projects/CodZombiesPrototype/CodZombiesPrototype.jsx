@@ -54,15 +54,19 @@ export default function LadyUmbrella() {
             <ul className="cz-features">
               <li>
                 <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />
-                <p>Movement and Animations</p>
+                <p>Character Movement, Controls and Camera</p>
+              </li>
+               <li>
+                <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />
+                <p>Animations: State machine, montages and custom sequences</p>
               </li>
               <li>
                 <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />
-                <p>Shooting System and Weapons</p>
+                <p>Weapons: Shooting, Reload and Upgrades system</p>
               </li>
               <li>
                 <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />
-                <p>Multiple Interactables</p>
+                <p>Multiple Interactables: Mysterious Box, Pack-a-punch, Locked Doors, Pick-ups, Perks...</p>
               </li>
               <li>
                 <img className="feature-icon" src="/assets/images/projects/CodZombiesPrototype/Blood.png" alt="icon" />

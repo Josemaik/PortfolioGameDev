@@ -84,7 +84,7 @@ const projects = [
         I worked as a <strong>Solo Developer</strong> on this project, developing all the gameplay mechanics and systems in 1 month.
       </>
     ),
-    url: '#'
+    url: 'https://www.youtube.com/watch?v=KtiYYos_vhk'
   },
    {
     title: 'Teapathia',
@@ -100,7 +100,7 @@ const projects = [
         I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering.
       </>
     ),
-    url: '#'
+    url: 'https://www.youtube.com/watch?v=abRziRtpIaw&t=290s'
   }
 ];
 

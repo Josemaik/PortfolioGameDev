@@ -74,6 +74,13 @@
   transition: none;
 }
 
+.skill-item:hover {
+  transform: scale(1.2); 
+  border: 1px solid #64ff64;
+  box-shadow: 0 0 15px #64ff64;
+  cursor: pointer;
+}
+
 .skill-header {
   display: flex;
   flex-direction: column;
@@ -89,6 +96,8 @@
   gap: 0.5rem;
   transition: none;
 }
+
+
 
 .skill-name {
   color: #64ff64;

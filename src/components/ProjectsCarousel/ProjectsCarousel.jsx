@@ -52,7 +52,7 @@ const projects = [
       </>
     ),
     teamSize: 3,
-    url: 'https://kaiwa-ams0.itch.io/mr-og-the-sampler'
+    url: 'https://github.com/Josemaik/MrOg'
   },
   {
     title: 'Cod Zombies Prototype',
@@ -84,7 +84,7 @@ const projects = [
         I worked as a <strong>Solo Developer</strong> on this project, developing all the gameplay mechanics and systems in 1 month.
       </>
     ),
-    url: 'https://www.youtube.com/watch?v=KtiYYos_vhk'
+    url: 'https://github.com/Josemaik/UnexpectedMission'
   },
    {
     title: 'Teapathia',

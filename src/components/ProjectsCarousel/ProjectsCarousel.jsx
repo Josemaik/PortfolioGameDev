@@ -100,7 +100,7 @@ const projects = [
         I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering.
       </>
     ),
-    url: 'https://www.youtube.com/watch?v=abRziRtpIaw&t=290s'
+    url: '/projects/Teapathia'
   }
 ];
 

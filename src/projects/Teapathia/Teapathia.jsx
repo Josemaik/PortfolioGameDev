@@ -75,7 +75,7 @@ export default function Teapathia() {
                     <li>Creating a widget in Unreal that collects player input via keyboard or voice recognition and is stored in text format.</li>
                     <li>The prompt is sent to an AI (Python script), which will generate a response that is picked up by the UI and displayed on the screen.</li>
                     <li>A call will be made to the ElevenLabs API to generate the audio corresponding to the text.</li>
-                    <li>An animation system will manage the most appropriate animation to be executed by the teacher.</li>
+                    <li>An animation system will manage the most appropriate animation to be executed by the virtual character.</li>
                 </ul>
                 <div>
                     <img src="/assets/images/projects/Teapathia/Diagram.png" alt="Example media" />
@@ -89,21 +89,21 @@ export default function Teapathia() {
                 <div>
                   <img src="/assets/images/projects/Teapathia/SpeechRecognition.png" alt="Example media" />
                 </div>
-                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Managers/AISpawnPoint.cpp" target="_blank" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/Teapathia/blob/main/VoiceRecognition.py" target="_blank" aria-label="View code on GitHub">
                     <FaGithub />
-                    <span>Speech Recognition Script!</span>
+                    <span>Speech Recognition Script</span>
                 </a>
                 <p>I developed a <strong>Chatbot</strong> based on <b>natural language processing and machine learning techniques</b>, implemented in Python for its versatility and efficiency in AI development. The model was trained using specific datasets —one for interaction with a teacher and another for interaction with a pediatrician— both validated by medical professionals. These corpora, structured in tabular format for easier analysis, enable the chatbot to maintain natural and coherent conversations within their respective contexts.</p>
                 <div>
                   <img src="/assets/images/projects/Teapathia/ExecutionIA.png" alt="Example media" />
                 </div>
-                 <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Managers/AISpawnPoint.cpp" target="_blank" aria-label="View code on GitHub">
+                 <a className="lu-github-btn" href="https://github.com/Josemaik/Teapathia/blob/main/chatbot/chatbot.py" target="_blank" aria-label="View code on GitHub">
                     <FaGithub />
-                    <span>ChatBot IA Script!</span>
+                    <span>ChatBot IA Script</span>
                 </a>
-                <a className="lu-github-btn" href="https://github.com/Josemaik/LadyUmbrella/blob/main/Source/LadyUmbrella/AI/Managers/AISpawnPoint.cpp" target="_blank" aria-label="View code on GitHub">
+                <a className="lu-github-btn" href="https://github.com/Josemaik/Teapathia/tree/main/chatbot" target="_blank" aria-label="View code on GitHub">
                     <FaGithub />
-                    <span>Datasets!</span>
+                    <span>Datasets</span>
                 </a>
                 <p>To trigger the characters' responses, I used <b>Eleven Labs</b>, passing the chatbot's response and a context via API, and I obtained an audio that was transformed into a sound wave.</p>
                 

@@ -3,6 +3,9 @@ import { FaGithub, FaLinkedin, FaInstagram, FaItchIo, FaYoutube } from 'react-ic
 import { MdEmail, MdYoutubeSearchedFor } from 'react-icons/md';
 
 export default function Footer() {
+  const handleBackToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -34,6 +37,9 @@ export default function Footer() {
         </div>
 
         <div className="footer-copy">Copyright © 2025 Josemaik</div>
+        <button className="back-to-top" onClick={handleBackToTop} aria-label="Back to top">
+          ↑ Back to top
+        </button>
       </div>
     </footer>
   );

@@ -139,6 +139,9 @@ export default function ProjectsGrid() {
           </a>
         ))}
       </div>
+      <div className="projects-more">
+        <p>You can find more projects on my <a href="https://github.com/Josemaik" target="_blank" rel="noopener noreferrer">GitHub...</a></p>
+      </div>
     </section>
   );
 }

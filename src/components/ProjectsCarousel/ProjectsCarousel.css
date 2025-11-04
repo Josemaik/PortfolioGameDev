@@ -12,6 +12,17 @@
   text-align: center;
 }
 
+.projects-more {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #cfd3d8;
+  font-weight: 100;
+}
+.projects-more a { color: #00fc47; text-decoration:solid ;nderline; margin-left: 0.25rem; }
+
+.projects-more p{
+  font-size: 3rem;
+}
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

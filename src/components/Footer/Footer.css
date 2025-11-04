@@ -49,3 +49,20 @@
   }
   .footer-content { align-items: center; }
 }
+
+.back-to-top {
+  margin-top: 0.25rem;
+  background: #00fc47;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.back-to-top:hover { transform: translateY(-3px); box-shadow: 0 8px 18px rgba(0,0,0,0.25); }
+
+@media (max-width: 768px) {
+  .back-to-top { width: 90%; }
+}

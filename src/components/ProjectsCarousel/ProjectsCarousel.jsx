@@ -88,8 +88,8 @@ const projects = [
   },
    {
     title: 'Teapathia',
-    studio: 'Final Degree Project',
-  image: '/assets/images/projects/Teapathia/teapathia.png',
+    studio: 'Personal Project',
+  image: '/assets/images/projects/Teapathia/teapathia_presentation.png',
     description: ( 
         <>
         <strong>3D serious video game</strong> aimed at parents of children with autism spectrum disorders.
@@ -97,7 +97,8 @@ const projects = [
     ),
     role: (
       <>
-        I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering.
+        I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering, 
+highlighting the <strong>interaction with 3D avatars</strong>, cinematics, and environments.
       </>
     ),
     url: '/projects/Teapathia'

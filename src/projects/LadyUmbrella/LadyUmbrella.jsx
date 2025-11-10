@@ -32,7 +32,6 @@ export default function LadyUmbrella() {
         </div>
         <div className="lu-hero-overlay">
           <img src="/assets/images/projects/LadyUmbrella/LadyUmbrella_Logo1_White.png" alt="Lady Umbrella Logo" className="lu-logo" />
-          <p className="lu-tagline"><strong>An umbrella is more than protection — it's your arsenal.</strong></p>
           <div className="lu-socials">
             {socials.map((s, i) => {
               const Icon = s.icon;

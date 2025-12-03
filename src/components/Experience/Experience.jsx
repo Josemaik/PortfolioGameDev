@@ -9,21 +9,21 @@ const experiences = [
     role: "AI and Gameplay Programmer",
     company: "Zulo Interactive",
     coverImage: "/assets/images/logos/Zulo_Logo.png",
-    period: "2024 - Present",
+    period: "2025 fabruary - 2025 november",
     summary: (
       <>
-      Lady Umbrella is a Vertical Slice of a third-person action-adventure shooter in which you wield Francesca's high-tech umbrella.
+      <a class = "summarry-project-link" target="_blank" href='https://store.steampowered.com/app/3956890/Lady_Umbrella/'>Lady Umbrella</a> is a third-person action-adventure shooter in which you wield Francesca's high-tech umbrella.
       </>
     ),
     summary_p2: (<>I worked in a team composed of 8 designers, 3 core artists, 8 programmers, 3 sound designers and many more, reaching a total of 40.</>),
     details: [
-      "Implement a tool that allows designers to quickly and iteratively create encounters. This allows them to configure spawning, archetypes, events, reinforcements, combat triggers, tokens, and organize the arena into zones to create specific behaviors.",
-      "Design and creation of behavior trees for the main enemy archetypes (mafia and agency). Implementation of custom tasks, conditions, and services.",
-      "EQS system with custom tests and filters to perform behaviors such as cover seeking, close combat, line-of-sight seeking, or finding a flanking path.",
-      "Creating class architecture for enemies, weapons, and AI controllers",
-      "Enemy interaction with the umbrella, shock dart, and grappling hook gadgets. Improved and streamlined the grappling hook's aim and interaction with rotating or environmental elements.",
-      "Door and window system for enemy arena entrance events.",
-      "Voiceline system for the protagonist and enemies that includes combat, cinematics, and in-game sequences."
+      <>Implement an <b>Editor Tool</b> that allows designers to quickly and iteratively <b>create encounters</b>.</>,
+      <>Design and creation of <b>behavior trees</b> for the main enemy archetypes (mafia and agency).</>,
+      <><b>Enviroment Query System</b> to perform behaviors such as cover seeking, close combat, line-of-sight seeking, or finding a flanking path.</>,
+      <>Creating <b>class architecture</b> for enemies, weapons, and AI controllers</>,
+      <><b>Enemy interactions</b> with the umbrella, shock dart, and grappling hook gadgets.</>,
+      <>Door and window system for enemy <b>arena entrance events.</b></>,
+      <><b>Voiceline system</b> for the protagonist and enemies that includes combat, cinematics, and in-game sequences.</>
     ]
   },
   {
@@ -32,13 +32,13 @@ const experiences = [
     company: "Universitat Alacant, EPS",
     coverImage: "/assets/images/logos/UA_logo.png",
     period: "2024 june - 2024 august",
-    summary: "Collaborate to make the data generation pipeline of a project more flexible and agile for the generation of realistic virtual scenes with Unreal Engine 5.",
+    summary: "Collaborate to make the data generation pipeline of a unannounced project more flexible and agile for the generation of realistic virtual scenes with Unreal Engine 5.",
     summary_p2: "",
     details: [
-      "Creating realistic 3D scenes using Gaussian splats generated in Luma AI and importing them into the engine",
-      "Dynamic scene loading from json: metahuman, gaussian splat and cine camera data.",
-      "Improve and Fix Tool in C++ that captures frames from the scene and exports to files",
-      "Skeleton retargeter to generate metahuman animations from recorded animations."
+      <>Creating realistic 3D scenes using <b>Gaussian splats</b> generated in Luma AI and importing them into the engine</>,
+      <><b>Dynamic scene loading from json:</b> metahuman, gaussian splat and cine camera data.</>,
+      <>Improve and Fix <b>C++ Tool</b> that captures frames from the scene and exports to files</>,
+      <><b>Skeleton retargeter</b> to generate metahuman animations from recorded animations.</>
     ]
   },
   {
@@ -49,17 +49,17 @@ const experiences = [
     period: "2023 - 2024",
     summary: (
     <>
-    Along with a team of six people, I developed Two Wonders, an isometric adventure game in which you control a wizard in search of his master.
+    Along with a team of six people, I developed <a class = "summarry-project-link" target="_blank" href='https://kaiwagames.itch.io/two-wonders'>Two Wonders</a>, an isometric adventure game in which you control a wizard in search of his master.
     </>
     ),
-    summary_p2: (<>We also developed Mr. Og, an arcade game based on the classic Guzzler for the Amstrad CPC.</>),
+    summary_p2: (<>We also developed <a class = "summarry-project-link" target="_blank" href='https://kaiwa-ams0.itch.io/mr-og-the-sampler'>Mr. Og</a>, an arcade game based on the classic Guzzler for the Amstrad CPC.</>),
     details: [
-      "Zelda Model with Raylib library",
-      "Custom Game Engine - ECS",
-      "Custom AI Engine : Behaviour Trees, Blackboard, Steering Behavour, Navigation Mesh, Pathfinding and Perception System.",
-      "Contribution to Custom Graphics Engine based on OpenGL: Skeletal animation, including import bones and animation data from obj files and the system to reproduce them",
-      "Event trigger system for dialogue reprodution, interaction with level elements and scripted sequences",
-      "Collisions and AI system in Assembly Z80"
+      <><b>Zelda Model</b> with Raylib library</>,
+      <><b>Custom Game Engine - ECS</b></>,
+      <><b>Custom AI Engine</b> : Behaviour Trees, Blackboard, Steering Behavour, Navigation Mesh, Pathfinding and Perception System.</>,
+      <>Contribution to <b>Custom Graphics Engine</b> based on OpenGL: Skeletal animation, including import bones and animation data from obj files and the system to reproduce them</>,
+      <><b>Event trigger system</b> for dialogue reprodution, interaction with level elements and scripted sequences</>,
+      <>Collisions and AI system in <b>Assembly Z80</b></>
     ]
   }
 ]

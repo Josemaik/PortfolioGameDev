@@ -8,6 +8,11 @@
     color: white;
 }
 
+.summarry-project-link
+{
+  color: #3b0065;
+}
+
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -213,6 +218,9 @@
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
+.modal-header h3 {
+  color: #000000;
+}
 
 .modal-header h3,.modal-header span {margin-left: 1.5rem;}
 
@@ -225,7 +233,7 @@
 
 .modal-body li {
   margin-bottom: 0.5rem;
-  color: #666;
+  color: #000000;
 }
 
 /* Responsive design */

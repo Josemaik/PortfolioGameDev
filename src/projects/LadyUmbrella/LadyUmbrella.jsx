@@ -50,7 +50,7 @@ export default function LadyUmbrella() {
           <div className="lu-summary-text">
             <h1>Overview</h1>
             <p>
-              Lady Umbrella is a <b>3D action-adventure shooter</b> where players step into the role of <b>special agent Francesca De Angelis</b>, better known as Lady Umbrella. While deep undercover within Italy’s last surviving mafia family, she’s betrayed and framed by her own partner. Now, hunted by her own agency, she must clear her name and bring down the criminal organization using her signature weapon — a<b> multi-functional umbrella</b> that serves as a shotgun when closed and a shield when opened.
+              Lady Umbrella is a <b>3D action-adventure shooter</b> where players step into the role of <b>special agent Francesca De Angelis</b>. Her signature weapon — a<b> multi-functional umbrella</b> that serves as a shotgun when closed and a shield when opened.
             </p>
             <h1>Features</h1>
             <ul className="lu-features">
@@ -77,7 +77,7 @@ export default function LadyUmbrella() {
             </ul>
             <div className="lu-role-box" role="note" aria-label="Project role">
               <strong>My Role:</strong>
-              <p>I worked as <b>AI and Gameplay Programmer</b> on this game as my Master's Degree Final Project.</p>
+              <p>I worked as <b>AI, Tools and Gameplay Programmer</b>.</p>
             </div>
           </div>
         </section>

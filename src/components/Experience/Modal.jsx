@@ -22,7 +22,6 @@ const Modal = ({ experience, onClose }) => {
         </button>
 
         <div className="modal-header">
-          <h3>My Contributions:</h3>
         </div>
 
         <div className="modal-body">

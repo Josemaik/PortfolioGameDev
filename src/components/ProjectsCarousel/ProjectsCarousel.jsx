@@ -4,6 +4,22 @@ import { RiTeamFill } from "react-icons/ri";
 
 const projects = [
   {
+    title: 'The Witcher Prototype',
+    studio: 'Personal Project',
+    image: 'assets/images/projects/TheWitcher/TheWitcherPrototype.png',
+    description: (
+      <>
+        <strong>RPG Fan Game</strong> inspired by <strong>The Witcher Saga</strong>.
+      </>
+    ),
+    role: (
+      <>
+        I’m currently developing this project as a <strong>Solo Developer</strong>, focused on creating a <strong>fully replicated, data-driven multiplayer combat system built on Unreal Engine’s Gameplay Ability System (GAS)</strong>.
+      </>
+    ), 
+    url: 'https://github.com/Josemaik/RPGProject'
+  },
+  {
     title: 'Lady Umbrella',
     studio: 'Zulo Interactive',
     image: '/assets/images/projects/LadyUmbrella/LadyUmbrella_cartel.png',
@@ -54,9 +70,26 @@ const projects = [
     teamSize: 3,
     url: 'https://github.com/Josemaik/MrOg'
   },
+   {
+    title: 'Teapathia',
+    studio: 'Personal Project',
+  image: '/assets/images/projects/Teapathia/teapathia_presentation.png',
+    description: ( 
+        <>
+        <strong>3D serious video game</strong> aimed at parents of children with autism spectrum disorders.
+        </>
+    ),
+    role: (
+      <>
+        I worked as a <strong>Solo Developer</strong>,
+highlighting the <strong>interaction with 3D avatars using ML,State Machines and UMG UI</strong>, cinematics and environments in UE5.
+      </>
+    ),
+    url: '/projects/Teapathia'
+  },
   {
     title: 'Cod Zombies Prototype',
-    studio: 'Fan Game',
+    studio: 'Personal Project',
   image: '/assets/images/projects/CodZombiesPrototype/CodPrototype.png',
     description: ( 
         <>
@@ -72,7 +105,7 @@ const projects = [
   },
    {
     title: 'Sci-Fi Shooter prototype',
-    studio: 'Fan Game',
+    studio: 'Personal Project',
   image: '/assets/images/projects/ScifiShooter/UnexpectedMission.png',
     description: ( 
         <>
@@ -85,23 +118,6 @@ const projects = [
       </>
     ),
     url: 'https://github.com/Josemaik/UnexpectedMission'
-  },
-   {
-    title: 'Teapathia',
-    studio: 'Personal Project',
-  image: '/assets/images/projects/Teapathia/teapathia_presentation.png',
-    description: ( 
-        <>
-        <strong>3D serious video game</strong> aimed at parents of children with autism spectrum disorders.
-        </>
-    ),
-    role: (
-      <>
-        I worked as a <strong>Solo Developer</strong>, developing the entire project during my last year of engineering, 
-highlighting the <strong>interaction with 3D avatars</strong>, cinematics, and environments.
-      </>
-    ),
-    url: '/projects/Teapathia'
   }
 ];
 
